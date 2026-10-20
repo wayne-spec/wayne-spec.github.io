@@ -97,174 +97,71 @@
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">Selected work</span>
-        <h2>Six systems, from first question to production.</h2>
-        <p>Most client code is private. Where I can't link to it, I've described the system as it actually works, and I'm happy to walk through any of it on a call.</p>
+        <h2>Six projects: the goal, how I did it, and what I learned.</h2>
+        <p>Most client work is private, so each project is described in plain terms, with the tools I used. I’m happy to walk through any of them on a call.</p>
       </div>
 
       <div class="cases">
-
         <article class="case reveal">
-          <div class="case-visual" aria-hidden="true">
-            <div class="diagram">
-              <div class="diagram-caption">How it works</div>
-              <div class="flow">
-                <div class="node"><b>Revenue Excel uploads</b><small>7 sheet layouts</small></div>
-                <div class="arrow"></div>
-                <div class="node"><b>Tested parsers → Postgres</b><small>one clean table</small></div>
-                <div class="arrow"></div>
-                <div class="node hot"><b>AI query agent</b><small>plain-language questions</small></div>
-                <div class="node guard"><b>Read-only SQL, locked-down role</b><small>validated before it runs</small></div>
-                <div class="arrow"></div>
-                <div class="split">
-                  <div class="node"><b>Web chat</b></div>
-                  <div class="node"><b>WhatsApp</b><small>approved numbers</small></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">How it works</div><div class="flow"><div class="node"><b>Monthly revenue reports come in</b></div><div class="arrow"></div><div class="node"><b>Cleaned and stored in one database</b></div><div class="arrow"></div><div class="node hot"><b>Staff ask a question on WhatsApp</b></div><div class="arrow"></div><div class="node guard"><b>The AI can read the data, never change it</b></div><div class="arrow"></div><div class="node"><b>Answer from the county’s own figures</b></div></div></div></div>
           <div class="case-body">
             <span class="case-meta">Nairobi City County · Pneuma Labs · 2026</span>
-            <h3>Ask the county's revenue data a question on WhatsApp</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>Revenue reports arrived as Excel workbooks in several different layouts. Answering a simple question, such as what one revenue stream brought in last quarter, meant someone digging through spreadsheets by hand.</dd></div>
-              <div><dt>What I did</dt><dd>Wrote and tested parsers for seven sheet layouts that load every upload into Postgres. Built an AI agent that answers plain-language questions on the web and on WhatsApp. It can only run validated, read-only queries through a restricted database role, and only approved numbers can reach it. I ran several accuracy audits against the source sheets and fixed double-counting and date-range errors.</dd></div>
-              <div><dt>Result</dt><dd>Staff get answers computed from the county's own figures in a chat message, without opening a spreadsheet.</dd></div>
-            </dl>
-            <ul class="chips"><li>Next.js</li><li>TypeScript</li><li>Supabase / Postgres</li><li>LLM agents</li><li>Text-to-SQL</li><li>WhatsApp</li><li>Vitest</li></ul>
+            <h3>A WhatsApp assistant for a county revenue team</h3>
+            <dl><div><dt>The project</dt><dd>An assistant that county revenue staff can message on WhatsApp to get answers about the revenue the county has collected.</dd></div><div><dt>The goal</dt><dd>Let staff get a revenue figure in seconds by asking in plain words, instead of digging through spreadsheets.</dd></div><div><dt>How I did it</dt><dd>I built a system that reads the county’s revenue reports into one clean database, then added an AI assistant staff can message on WhatsApp or the web. The AI can only read the data, never change it, and only approved phone numbers can use it.</dd></div><div><dt>The outcome</dt><dd>Staff ask questions like “what did this revenue stream bring in last quarter?” and get answers from the county’s own records. I checked the answers against the original reports and fixed the places where amounts were being counted twice.</dd></div><div><dt>What I learned</dt><dd>The hard part was not the AI, it was the data. An answer that looks right is not the same as an answer that is right, so every number has to be checked against the source.</dd></div></dl>
+            <div><span class="tools-label">Tools</span><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>TypeScript</li><li>Supabase (PostgreSQL)</li><li>LLMs via NVIDIA NIM</li><li>WhatsApp</li><li>Vercel</li></ul></div>
             <div class="case-links"><span class="private">Government system, private. Walkthrough on request.</span></div>
           </div>
         </article>
-
         <article class="case reveal">
-          <div class="case-visual" aria-hidden="true">
-            <div class="stats">
-              <div class="stat"><strong>90</strong><span>data models</span></div>
-              <div class="stat"><strong>63</strong><span>screens</span></div>
-              <div class="stat"><strong>120</strong><span>automated test files</span></div>
-              <div class="stat"><strong>Nightly</strong><span>backups, plus a written recovery plan</span></div>
-              <div class="stat wide accent"><strong>AI proposes, code decides.</strong><span>Every AI suggestion is checked against a schema and business rules before anything happens.</span></div>
-            </div>
-          </div>
+          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">What it covers</div><div class="flow"><div class="split"><div class="node"><b>Rent and billing</b></div><div class="node"><b>Leases, signed online</b></div></div><div class="arrow"></div><div class="split"><div class="node"><b>Repairs and contractors</b></div><div class="node"><b>Online payments</b></div></div><div class="arrow"></div><div class="node hot"><b>Tenants report issues on WhatsApp</b></div><div class="arrow"></div><div class="node guard"><b>AI suggests, rules decide</b></div></div></div></div>
           <div class="case-body">
             <span class="case-meta">PropFlow · Pneuma Labs · 2026</span>
-            <h3>Property management for East African landlords</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>Landlords and managing agents were running rent, arrears, repairs and tenant messages across spreadsheets, WhatsApp threads and paper files.</dd></div>
-              <div><dt>What I did</dt><dd>Designed and built the whole platform: rent roll and billing, arrears and late fees, deposits and reconciliation, leases with document generation and e-signing, maintenance with vendor approvals, and a full audit log. Tenants report problems on WhatsApp, and emergencies trigger a phone call. An AI model reads tenant messages and suggests the next step; the code only acts on it if it passes validation.</dd></div>
-              <div><dt>Result</dt><dd>A production-grade SaaS with Paystack payments, two web instances, a scheduler, nightly backups and a written disaster-recovery plan.</dd></div>
-            </dl>
-            <ul class="chips"><li>Next.js</li><li>Prisma</li><li>PostgreSQL</li><li>Twilio</li><li>WhatsApp</li><li>Paystack</li><li>Docker</li><li>Sentry</li></ul>
+            <h3>One system for landlords to run rent, tenants and repairs</h3>
+            <dl><div><dt>The project</dt><dd>Property-management software for landlords and managing agents in East Africa.</dd></div><div><dt>The goal</dt><dd>Replace the spreadsheets, WhatsApp threads and paper files landlords juggle with one system for rent, tenants and repairs.</dd></div><div><dt>How I did it</dt><dd>I designed and built the whole platform: rent and billing, arrears, deposits, leases signed online, repairs with contractor approvals and online payments. Tenants report problems on WhatsApp, and an emergency triggers a phone call. AI reads tenant messages and suggests what to do, but the system checks each suggestion against the rules before acting.</dd></div><div><dt>The outcome</dt><dd>A production-ready platform with online payments, automated testing, nightly backups and a written recovery plan.</dd></div><div><dt>What I learned</dt><dd>AI is most useful when it suggests and clear rules decide. That is what makes it safe to put near tenants and landlords’ money.</dd></div></dl>
+            <div><span class="tools-label">Tools</span><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>Prisma</li><li>PostgreSQL</li><li>Twilio</li><li>WhatsApp</li><li>Paystack</li><li>Docker</li><li>Sentry</li></ul></div>
             <div class="case-links"><span class="private">Client product, private. Demo on request.</span></div>
           </div>
         </article>
-
         <article class="case reveal">
-          <div class="case-visual" aria-hidden="true">
-            <div class="diagram">
-              <div class="diagram-caption">Runs every morning before market open</div>
-              <div class="flow">
-                <div class="split">
-                  <div class="node"><b>NSE prices</b></div>
-                  <div class="node"><b>CBK macro + news</b></div>
-                </div>
-                <div class="arrow"></div>
-                <div class="node"><b>Analyst agents</b><small>fundamentals, news, sentiment</small></div>
-                <div class="arrow"></div>
-                <div class="node hot"><b>Bull vs bear debate → trader</b><small>multi-agent</small></div>
-                <div class="arrow"></div>
-                <div class="node guard"><b>Risk check + inflation hurdle</b><small>sizing, volatility</small></div>
-                <div class="arrow"></div>
-                <div class="node"><b>Plain-English call</b><small>tracked for accuracy</small></div>
-              </div>
-            </div>
-          </div>
+          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">Every morning, before the market opens</div><div class="flow"><div class="split"><div class="node"><b>Share prices</b></div><div class="node"><b>Economy and news</b></div></div><div class="arrow"></div><div class="node"><b>AI analysts study each angle</b></div><div class="arrow"></div><div class="node hot"><b>They argue the case for and against</b></div><div class="arrow"></div><div class="node guard"><b>A risk check that accounts for inflation</b></div><div class="arrow"></div><div class="node"><b>A plain-English view, scored later for accuracy</b></div></div></div></div>
           <div class="case-body">
             <span class="case-meta">Market intelligence · Pneuma Labs · 2026</span>
-            <h3>An AI research analyst for the Nairobi Securities Exchange</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>Analysts covering the NSE spend most of their time gathering prices, macro data and news before they can start thinking about a stock.</dd></div>
-              <div><dt>What I did</dt><dd>Built a multi-agent research system, adapted to TypeScript from the open-source TradingAgents framework. Analyst agents feed a bull-and-bear debate, a trader and a risk check, and every stock is scored against an inflation-adjusted return hurdle. Each prediction is logged and resolved later, so the system's accuracy can be measured rather than assumed. Model calls fall back across four LLM providers so the daily run still completes when one goes down.</dd></div>
-              <div><dt>Result</dt><dd>Analysts in Kenya use it for research and decision support. It speeds up their research; the investment decision stays with them.</dd></div>
-            </dl>
-            <ul class="chips"><li>Multi-agent LLMs</li><li>Vercel AI SDK</li><li>Next.js</li><li>Supabase</li><li>Postgres full-text retrieval</li><li>GitHub Actions</li></ul>
+            <h3>An AI research assistant for Nairobi Securities Exchange analysts</h3>
+            <dl><div><dt>The project</dt><dd>An AI tool that does the first round of stock research on the Nairobi Securities Exchange.</dd></div><div><dt>The goal</dt><dd>Cut the time analysts spend gathering prices, economic data and news before they can start thinking about a stock.</dd></div><div><dt>How I did it</dt><dd>I adapted an open-source framework into a team of AI “analysts” that each study one angle, argue the case for and against a stock, then pass a risk check that accounts for Kenyan inflation. It runs automatically every morning before the market opens, and switches to a backup AI provider if one goes down.</dd></div><div><dt>The outcome</dt><dd>Analysts in Kenya use it for research and decision support. It does the groundwork; the investment decision stays with them.</dd></div><div><dt>What I learned</dt><dd>You can’t trust an AI you can’t measure. Logging every prediction and scoring it later is what turns a clever demo into a tool people rely on.</dd></div></dl>
+            <div><span class="tools-label">Tools</span><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Vercel AI SDK</li><li>Multi-agent LLMs</li><li>GitHub Actions</li></ul></div>
             <div class="case-links"><span class="private">Private. Demo on request.</span></div>
           </div>
         </article>
-
         <article class="case reveal">
-          <div class="case-visual" aria-hidden="true">
-            <div class="stats">
-              <div class="stat accent"><strong>23</strong><span>toolkit modules made interactive</span></div>
-              <div class="stat"><strong>20</strong><span>guided workbenches</span></div>
-              <div class="stat"><strong>79</strong><span>source documents built in</span></div>
-              <div class="stat"><strong>3</strong><span>export formats: PDF, Excel, Word</span></div>
-              <div class="stat wide"><strong>Screen → assess → disclose</strong><span>Client screening, climate-risk assessment and financed-emissions calculation in one workflow.</span></div>
-            </div>
-          </div>
+          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">A guided path for a risk team</div><div class="flow"><div class="node"><b>Screen a client for climate risk</b></div><div class="arrow"></div><div class="node"><b>Assess the institution’s readiness</b></div><div class="arrow"></div><div class="node hot"><b>Measure emissions from loans and investments</b></div><div class="arrow"></div><div class="node"><b>Stress-test the portfolio</b></div><div class="arrow"></div><div class="node"><b>Export a complete record (PDF, Excel, Word)</b></div></div></div></div>
           <div class="case-body">
             <span class="case-meta">British International Investment · Consulting · 2026</span>
-            <h3>A climate and nature risk toolkit that banks can actually use</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>BII's climate-risk guidance for financial institutions lived in PDFs and spreadsheets. That made it hard to apply in the middle of a real lending or investment decision.</dd></div>
-              <div><dt>What I did</dt><dd>Built the web platform that turns the toolkit into working tools: a maturity assessment, rapid climate screening of clients, a financed-emissions calculator, stress-test calculators and guided workbenches with validation. Records link institutions, clients, projects and portfolios, and every piece of work exports cleanly.</dd></div>
-              <div><dt>Result</dt><dd>Risk and ESG teams can work through the framework step by step and finish with a complete, exportable record of their assessment.</dd></div>
-            </dl>
-            <ul class="chips"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Climate risk</li><li>Financed emissions</li></ul>
+            <h3>A climate-risk toolkit banks can actually use</h3>
+            <dl><div><dt>The project</dt><dd>A digital version of British International Investment’s climate and nature risk toolkit for financial institutions.</dd></div><div><dt>The goal</dt><dd>Turn guidance that lived in PDFs and spreadsheets into tools that banks and investors can use in the middle of a real lending or investment decision.</dd></div><div><dt>How I did it</dt><dd>I broke the toolkit into modules and built step-by-step workbenches for each task: screening a client for climate risk, measuring the emissions linked to loans and investments, and stress-testing a portfolio. Each piece of work links institutions, clients and projects, and exports cleanly.</dd></div><div><dt>The outcome</dt><dd>Risk and sustainability teams can work through the full framework and finish with a complete, shareable record of their assessment.</dd></div><div><dt>What I learned</dt><dd>Complex frameworks get used when they are broken into small guided steps. Most of the work is understanding the method well enough to make it simple.</dd></div></dl>
+            <div><span class="tools-label">Tools</span><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li></ul></div>
             <div class="case-links"><span class="private">Client platform, private.</span></div>
           </div>
         </article>
-
         <article class="case reveal">
-          <div class="case-visual">
-            <img src="assets/img/ricc.webp" width="1200" height="684" loading="lazy" alt="Home page of the RICC National Innovation Capacity Assessment platform for Nigeria's Federal Ministry of Education">
-          </div>
+          <div class="case-visual"><img src="assets/img/ricc.webp" width="1200" height="684" loading="lazy" alt="Home page of the RICC National Innovation Capacity Assessment platform for Nigeria’s Federal Ministry of Education"></div>
           <div class="case-body">
             <span class="case-meta">Federal Ministry of Education, Nigeria · ProDG Studios · 2026</span>
-            <h3>A national platform for moving research into the market</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>Nigeria's universities, industry, innovators and regulators had few working links between them, so most research never became a product.</dd></div>
-              <div><dt>What I did</dt><dd>Led frontend development and UX. I researched where collaboration was breaking down, turned the findings into user journeys, and designed and built the experience for innovation-capacity assessment (based on Technology Readiness Levels), ecosystem participation and routes to funding and IP support. I didn't just put the paper process online.</dd></div>
-              <div><dt>Result</dt><dd>A live national platform for the Ministry of Education and TETFund.</dd></div>
-            </dl>
-            <ul class="chips"><li>Frontend lead</li><li>UX research</li><li>User journeys</li><li>Product requirements</li><li>Govtech</li></ul>
+            <h3>A national platform to move research into the market</h3>
+            <dl><div><dt>The project</dt><dd>RICC, a national platform for Nigeria’s Research, Innovation and Commercialisation Council.</dd></div><div><dt>The goal</dt><dd>Connect universities, industry, innovators and regulators so more research turns into real products and services.</dd></div><div><dt>How I did it</dt><dd>I led the frontend and user experience. Before designing anything, I researched where collaboration was breaking down, then built the user journeys around those bottlenecks: assessing how ready an innovation is, joining the ecosystem, and finding routes to funding and intellectual-property support.</dd></div><div><dt>The outcome</dt><dd>A live national platform for the Ministry of Education and TETFund.</dd></div><div><dt>What I learned</dt><dd>Understand the problem before you build. Putting a broken paper process online only gives you a faster broken process.</dd></div></dl>
+            <div><span class="tools-label">Tools</span><ul class="chips" aria-label="Tools used"><li>User research</li><li>UX design</li><li>Frontend development</li></ul></div>
             <div class="case-links"><a href="https://ricc.education.gov.ng/" target="_blank" rel="noopener">Visit ricc.education.gov.ng ↗</a></div>
           </div>
         </article>
-
         <article class="case reveal">
-          <div class="case-visual" aria-hidden="true">
-            <div class="diagram">
-              <div class="diagram-caption">From statement to answer</div>
-              <div class="flow">
-                <div class="split">
-                  <div class="node"><b>M-Pesa &amp; bank PDFs</b></div>
-                  <div class="node"><b>Payslips &amp; P9 forms</b></div>
-                </div>
-                <div class="arrow"></div>
-                <div class="node"><b>Layout-aware parsing + OCR</b><small>incl. locked PDFs</small></div>
-                <div class="arrow"></div>
-                <div class="node hot"><b>Finance assistant (RAG)</b><small>+ KRA tax engine</small></div>
-                <div class="arrow"></div>
-                <div class="split">
-                  <div class="node"><b>WhatsApp</b></div>
-                  <div class="node"><b>Telegram + web</b></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">From statement to answer</div><div class="flow"><div class="split"><div class="node"><b>M-Pesa and bank statements</b></div><div class="node"><b>Payslips and tax forms</b></div></div><div class="arrow"></div><div class="node"><b>Every transaction read and sorted</b></div><div class="arrow"></div><div class="node hot"><b>Ask anything about your money</b></div><div class="arrow"></div><div class="split"><div class="node"><b>WhatsApp</b></div><div class="node"><b>Telegram and web</b></div></div></div></div></div>
           <div class="case-body">
-            <span class="case-meta">Fintech · Lead developer · 2026</span>
+            <span class="case-meta">Personal finance · Lead developer · 2026</span>
             <h3>Chat with your finances, M-Pesa included</h3>
-            <dl>
-              <div><dt>Problem</dt><dd>For most Kenyans, financial records are scattered across M-Pesa statements, bank PDFs and payslips, and filing taxes with KRA is confusing.</dd></div>
-              <div><dt>What I did</dt><dd>Led development of an AI finance assistant. Users upload statements, including password-protected and scanned PDFs. The system extracts every transaction and lets them ask questions on WhatsApp, Telegram or the web. A tax engine reads P9 forms and walks users through filing with KRA.</dd></div>
-              <div><dt>Result</dt><dd>A working product with Paystack billing, 98 API routes and 31 automated test files.</dd></div>
-            </dl>
-            <ul class="chips"><li>Next.js</li><li>Supabase</li><li>RAG</li><li>OCR</li><li>WhatsApp</li><li>Telegram</li><li>Paystack</li></ul>
+            <dl><div><dt>The project</dt><dd>An AI assistant that helps people in Kenya understand their money and their taxes.</dd></div><div><dt>The goal</dt><dd>Help people see where their money goes and file with KRA without stress, using records they already have.</dd></div><div><dt>How I did it</dt><dd>I led development, working with one other developer. People upload M-Pesa statements, bank statements and payslips, even password-protected or scanned ones. The system reads every transaction, and people can ask questions on WhatsApp, Telegram or the web. It also reads P9 tax forms and walks people through filing.</dd></div><div><dt>The outcome</dt><dd>A working product with subscription payments.</dd></div><div><dt>What I learned</dt><dd>Meet people where they already are. M-Pesa statements and WhatsApp beat asking anyone to learn a new app.</dd></div></dl>
+            <div><span class="tools-label">Tools</span><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>Supabase</li><li>Pinecone (RAG)</li><li>OCR</li><li>WhatsApp</li><li>Telegram</li><li>Paystack</li></ul></div>
             <div class="case-links"><span class="private">Private. Demo on request.</span></div>
           </div>
         </article>
-
       </div>
 
       <div class="more">
