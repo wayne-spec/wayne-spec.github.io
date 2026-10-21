@@ -127,7 +127,7 @@
           <div class="case-body">
             <span class="case-meta">PropFlow · Pneuma Labs · 2026</span>
             <h3>One system for landlords to run rent, tenants and repairs</h3>
-            <dl><div><dt>The project</dt><dd>Property-management software for landlords and managing agents in East Africa.</dd></div><div><dt>The goal</dt><dd>Replace the spreadsheets, WhatsApp threads and paper files landlords juggle with one system for rent, tenants and repairs.</dd></div><div><dt>How we did it</dt><dd>I designed and built the whole platform: rent and billing, arrears, deposits, leases signed online, repairs with contractor approvals and online payments. Tenants report problems on WhatsApp, and an emergency triggers a phone call. AI reads tenant messages and suggests what to do, but the system checks each suggestion against the rules before acting.</dd></div><div><dt>The challenges</dt><dd>Tenant messages are unpredictable, and the system handles real money and legal documents. Every AI suggestion had to be safe before it could reach a landlord or tenant.</dd></div><div><dt>The outcome</dt><dd>A production-ready platform with online payments, automated testing, nightly backups and a written recovery plan.</dd></div><div><dt>What I learned</dt><dd>AI is most useful when it suggests and clear rules decide. That is what makes it safe to put near tenants and landlords’ money.</dd></div></dl>
+            <dl><div><dt>The project</dt><dd>Property-management software for landlords and managing agents in East Africa.</dd></div><div><dt>The goal</dt><dd>Replace the spreadsheets, WhatsApp threads and paper files landlords juggle with one system for rent, tenants and repairs.</dd></div><div><dt>How we did it</dt><dd>I designed and built the whole platform: rent and billing, arrears, deposits, leases signed online, repairs with contractor approvals and online payments. Tenants report problems on WhatsApp, and an emergency triggers a phone call. AI reads tenant messages and suggests what to do, but the system checks each suggestion against the rules before acting. I also travelled to Uganda and Rwanda to meet partners, including the leadership teams of Keystone Technologies and Unispace.</dd></div><div><dt>The challenges</dt><dd>Tenant messages are unpredictable, and the system handles real money and legal documents. Every AI suggestion had to be safe before it could reach a landlord or tenant.</dd></div><div><dt>The outcome</dt><dd>A production-ready platform with online payments, automated testing, nightly backups and a written recovery plan. In Rwanda I trained five CEOs, property owners and their CTOs to use it, and I maintain it in production.</dd></div><div><dt>What I learned</dt><dd>AI is most useful when it suggests and clear rules decide. That is what makes it safe to put near tenants and landlords’ money.</dd></div></dl>
             <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>Prisma</li><li>PostgreSQL</li><li>Twilio</li><li>WhatsApp</li><li>Paystack</li><li>Docker</li><li>Sentry</li></ul></div>
             <div class="case-links"><span class="private">Client product, private. Demo on request.</span></div>
           </div>
@@ -157,8 +157,8 @@
           <div class="case-body">
             <span class="case-meta">Federal Ministry of Education, Nigeria · ProDG Studios · 2026</span>
             <h3>A national platform to move research into the market</h3>
-            <dl><div><dt>The project</dt><dd>RICC, a national platform for Nigeria’s Research, Innovation and Commercialisation Council.</dd></div><div><dt>The goal</dt><dd>Connect universities, industry, innovators and regulators so more research turns into real products and services.</dd></div><div><dt>How we did it</dt><dd>I led the frontend and user experience. Before designing anything, I researched where collaboration was breaking down, then built the user journeys around those bottlenecks: assessing how ready an innovation is, joining the ecosystem, and finding routes to funding and intellectual-property support.</dd></div><div><dt>The challenges</dt><dd>Many groups with different needs had to be served by one platform: universities, industry, innovators, regulators and funders.</dd></div><div><dt>The outcome</dt><dd>A live national platform for the Ministry of Education and TETFund.</dd></div><div><dt>What I learned</dt><dd>Understand the problem before you build. Putting a broken paper process online only gives you a faster broken process.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>User research</li><li>UX design</li><li>Frontend development</li></ul></div>
+            <dl><div><dt>The project</dt><dd>RICC, a national platform for Nigeria’s Research, Innovation and Commercialisation Council.</dd></div><div><dt>The goal</dt><dd>Connect universities, industry, innovators and regulators so more research turns into real products and services.</dd></div><div><dt>How we did it</dt><dd>I led the frontend and user experience. Before designing anything, I researched where collaboration was breaking down, then built the user journeys around those bottlenecks. The portal works offline: field agents fill in questionnaires where there is no internet, and their answers are sent once they are back online. I built the landing page, the analytics dashboards that show where innovations stall on the way to market, the evidence-verification panel and the consent controls, and I ran end-to-end testing before the national rollout.</dd></div><div><dt>The challenges</dt><dd>Many groups with different needs had to be served by one platform: universities, industry, innovators, regulators and funders. Much of the data had to be collected in places with weak or no internet, and the same innovation was often reported more than once.</dd></div><div><dt>The outcome</dt><dd>A live national platform for the Ministry of Education and TETFund, with questionnaires for every type of stakeholder, ready for a national rollout.</dd></div><div><dt>What I learned</dt><dd>Understand the problem before you build. Putting a broken paper process online only gives you a faster broken process.</dd></div></dl>
+            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>User research</li><li>UX design</li><li>Next.js</li><li>React</li><li>TypeScript</li><li>Offline web app</li><li>QA</li></ul></div>
             <div class="case-links"><a href="https://ricc.education.gov.ng/" target="_blank" rel="noopener">Visit ricc.education.gov.ng ↗</a></div>
           </div>
         </article>
@@ -178,6 +178,11 @@
         <h3>More work</h3>
         <div class="more-grid">
           <div class="mini reveal">
+            <span class="tag">Data collection · WhatsApp</span>
+            <h4>NGAO</h4>
+            <p>A WhatsApp platform that replaces paper forms for field reporting in Kenya. People answer in English or Kiswahili, misspellings are corrected, photo locations are checked, and every submission is kept as a permanent record. I was the full-stack developer: I built the engines that run the conversations and connected them to the admin dashboard.</p>
+          </div>
+          <div class="mini reveal">
             <span class="tag">Climate data · Prototype</span>
             <h4>Africa Climate &amp; Nature Data Platform</h4>
             <p>Sector dashboards and a Kenya county-level physical and transition risk map for MSMEs, built for Climate Shapers Africa.</p>
@@ -191,12 +196,12 @@
           <div class="mini reveal">
             <span class="tag">Security · Privacy</span>
             <h4>Breach Alert</h4>
-            <p>Opt-in breach monitoring. Users prove they own an address or domain, emails are encrypted at rest, and passwords are checked with k-anonymity.</p>
+            <p>Opt-in breach monitoring. Users prove they own an email address or domain before they are monitored, and passwords are checked without ever being sent in full.</p>
           </div>
           <div class="mini reveal">
             <span class="tag">Commerce · Kenya</span>
             <h4>Harambee Shop</h4>
-            <p>Group-buying for household essentials: shared baskets with a discount ladder, supplier-pack splitting, settlement and payouts. Free Pascal backend, Next.js front end.</p>
+            <p>Group-buying for household essentials: neighbours share a basket, unlock bigger discounts together, and split supplier packs. Built with Free Pascal and Next.js.</p>
           </div>
           <div class="mini reveal">
             <span class="tag">Education · Strathmore</span>
@@ -206,7 +211,7 @@
           <div class="mini reveal">
             <span class="tag">AI media · Team project</span>
             <h4>MessageHeard v3</h4>
-            <p>Worked on a multi-tenant platform for producing AI-generated video from podcast transcripts: Clerk sign-in, roles and organisations, transcript-to-scene breakdown, and a job queue for concurrent image and video generation.</p>
+            <p>Worked on a platform that turns podcast transcripts into AI-generated video: it breaks a transcript into scenes and creates images and video for each, for several client teams at once.</p>
           </div>
         </div>
       </div>
@@ -247,7 +252,8 @@
             <ul>
               <li>Lead discovery, product design and delivery, and build the systems hands-on.</li>
               <li>Built the NSE research agent, the Nairobi City County revenue assistant and the PropFlow property platform.</li>
-              <li>Process analysis and automation design for Mediscope and the Strathmore Centre for Value Investing.</li>
+              <li>Process analysis and automation design for Mediscope and the Strathmore Centre for Value Investing, including training the Centre's team.</li>
+              <li>Met partners in Uganda and Rwanda about PropFlow and trained five CEOs and their CTOs in Rwanda.</li>
             </ul>
           </div>
         </li>
@@ -263,17 +269,17 @@
           <div>
             <h3>Senior Software Engineer · <span class="org">ProDG Studios</span> (UK, remote)</h3>
             <ul>
-              <li><b>RICC, Federal Ministry of Education, Nigeria:</b> frontend and UX lead on the national research-commercialisation platform.</li>
+              <li><b>RICC, Federal Ministry of Education, Nigeria:</b> frontend and UX lead on the national innovation portal, built to collect data offline in remote areas.</li>
               <li><b>Trademark Registry, Federal Ministry of Industry, Trade and Investment, Nigeria:</b> digital registration and administration workflows.</li>
               <li><b>CrossVest, Venture Garden Group:</b> developed and deployed the frontend of an investment marketplace that partner apps can embed, taking it through user acceptance testing into production, with identity checks through Smile ID and Sumsub.</li>
-              <li><b>NGAO, Action Lab:</b> WhatsApp-first AI data collection that turns field conversations into structured records ready for analysis.</li>
+              <li><b>NGAO:</b> full-stack developer on a WhatsApp data-collection platform for field reporting in Kenya; built the engines and orchestrators and connected backend and frontend.</li>
             </ul>
           </div>
         </li>
         <li class="role reveal">
           <time>2025 – Present</time>
           <div>
-            <h3>Data Scientist → Partner · <span class="org">Climate Shapers Africa</span></h3>
+            <h3>Data Scientist → Technical Analyst → Partner · <span class="org">Climate Shapers Africa</span></h3>
             <p>Climate data pipelines, analytical models and AI automations. Climate-stress exposure analytics for the Kenya and Tanzania Bankers Associations, the Africa Climate &amp; Nature Data Platform, and Power BI dashboards for the Kenya Climate &amp; Nature Directory. Became a partner in 2026.</p>
           </div>
         </li>
