@@ -56,10 +56,12 @@
   .proj-result { border-left: 3px solid var(--accent); background: var(--bg-2); padding: 10px 14px; border-radius: 0 10px 10px 0; }
   .proj-result b { color: var(--accent); margin-right: 6px; }
   .proj-label { margin-bottom: 4px; }
+  .glance .where { color: var(--muted); font-size: .84rem; }
+  .proj li ul { margin-top: 4px; }
   .proj ul:not(.chips) { margin-top: 4px; padding-left: 20px; }
   .proj li { margin-bottom: 6px; }
   .page-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
-  @media (max-width: 640px) { .glance th:nth-child(3), .glance td:nth-child(3) { display: none; } }
+  @media (max-width: 640px) { .glance th:nth-child(3), .glance td:nth-child(3), .glance th:nth-child(4), .glance td:nth-child(4) { display: none; } }
 </style>
 </head>
 <body>
@@ -94,7 +96,7 @@
       <div class="section-head">
         <span class="kicker">All projects</span>
         <h2>Everything I've built and shipped.</h2>
-        <p>Software engineer and product manager. I build and ship data platforms, AI products, fintech and digital public services across Africa, from the first conversation with users to a system running in production. Selected projects below; walkthroughs and demos available on request.</p>
+        <p>Software engineer and product manager. I build and ship data platforms, AI products, fintech and digital public services across Africa, from the first conversation with users to a system running in production. On my most recent engineering team I finished first for delivery, with 297 issues completed at a 90.5% completion rate. Walkthroughs and demos are available on request.</p>
         <div class="page-actions">
           <a class="btn btn-primary" href="assets/Wayne-Williams-Opanja-Project-Portfolio.pdf" download>Download as PDF</a>
           <a class="btn btn-ghost" href="index.html#work">Back to selected work</a>
@@ -102,19 +104,25 @@
       </div>
       <div class="glance-wrap reveal">
         <table class="glance">
-          <thead><tr><th>Project</th><th>Client / context</th><th>Role</th><th>Result</th></tr></thead>
+          <thead><tr><th>Project</th><th>Client / context</th><th>Role</th><th>Dates</th><th>Result</th></tr></thead>
           <tbody>
-<tr><td><a href="#national-innovation-portal-ricc">National Innovation Portal (RICC)</a></td><td>Federal Ministry of Education, Nigeria</td><td>Frontend &amp; UI/UX Lead</td><td>Live national platform; offline data collection</td></tr>
-<tr><td><a href="#ngao-whatsapp-data-collection">NGAO</a></td><td>Field data collection, Kenya</td><td>Full-Stack Developer</td><td>Rolled out; 3,000+ users</td></tr>
-<tr><td><a href="#propflow-property-management-platform">PropFlow</a></td><td>Property management, East Africa</td><td>Lead Engineer &amp; Product Lead</td><td>In production; users in Kenya, Uganda, Rwanda</td></tr>
-<tr><td><a href="#revenue-intelligence-assistant">Revenue Intelligence Assistant</a></td><td>Nairobi City County</td><td>Lead Engineer</td><td>Revenue answers in seconds, audited</td></tr>
-<tr><td><a href="#cross-border-investment-platform">Cross-Border Investment Platform</a></td><td>Confidential fintech client</td><td>Frontend Engineer</td><td>Signed off and live in production</td></tr>
-<tr><td><a href="#climate-nature-risk-toolkit">Climate &amp; Nature Risk Toolkit</a></td><td>British International Investment</td><td>Consultant Developer</td><td>Full framework usable by finance staff</td></tr>
-<tr><td><a href="#messageheard-ai-video-production-platform">MessageHeard</a></td><td>AI video production</td><td>Full-Stack Developer</td><td>Multi-team platform, transcript to video</td></tr>
-<tr><td><a href="#stock-research-assistant">Stock Research Assistant</a></td><td>Nairobi Securities Exchange analysts</td><td>Lead Engineer</td><td>Used by analysts in Kenya</td></tr>
-<tr><td><a href="#trademark-registry-upgrade">Trademark Registry Upgrade</a></td><td>Federal Ministry of Industry, Trade &amp; Investment, Nigeria</td><td>Software Engineer</td><td>Upgraded registration system in use</td></tr>
-<tr><td><a href="#climate-stress-analytics-for-banks">Climate-Stress Analytics</a></td><td>Kenya &amp; Tanzania Bankers Associations</td><td>Technical Analyst</td><td>Climate risk linked to loan default</td></tr>
-<tr><td><a href="#chat-your-finances-ai-finance-assistant">Chat Your Finances</a></td><td>Personal finance, Kenya</td><td>Lead Developer</td><td>AI assistant on WhatsApp, Telegram, web</td></tr>
+<tr><td><a href="#national-innovation-portal-ricc">National Innovation Portal (RICC)</a></td><td>Federal Ministry of Education<br><span class="where">Nigeria</span></td><td>Lead Frontend Engineer</td><td>Jan 2026 – Jun 2026</td><td>Live national platform, survey to funding</td></tr>
+<tr><td><a href="#ngao-whatsapp-data-collection-platform">NGAO</a></td><td>Last-mile reporting<br><span class="where">Kenya</span></td><td>Full-Stack Developer</td><td>Mar 2026 – Jun 2026 (development); rolling out</td><td>Rolled out; 3,000+ users</td></tr>
+<tr><td><a href="#kenya-climate-nature-directory-research-and-publishing-pipeline">Kenya Climate &amp; Nature Directory</a></td><td>Climate Shapers Africa<br><span class="where">Africa</span></td><td>Sole Engineer</td><td>Jul 2026 – present</td><td>Running nightly; 2,774 records migrated</td></tr>
+<tr><td><a href="#propflow-property-management-platform">PropFlow</a></td><td>Landlords and managing agents<br><span class="where">Kenya, Uganda, Rwanda and the UK</span></td><td>Lead Engineer and Product Lead</td><td>Jun 2026 – Sep 2026 (development); live and maintained</td><td>In production; users in Kenya, Uganda, Rwanda and the UK</td></tr>
+<tr><td><a href="#cross-border-investment-platform">Cross-Border Investment Platform</a></td><td>Fintech, diaspora investment<br><span class="where">US and Europe to Kenya, Nigeria, Mauritius and South Africa</span></td><td>Lead Frontend Engineer, with backend, QA and research</td><td>Aug 2025 – Jun 2026</td><td>Live in production; four portals</td></tr>
+<tr><td><a href="#revenue-intelligence-assistant">Revenue Intelligence Assistant</a></td><td>Nairobi City County<br><span class="where">Kenya</span></td><td>Lead Engineer</td><td>Mar 2026</td><td>Revenue answers in seconds, audited</td></tr>
+<tr><td><a href="#breach-alert-dark-web-and-data-breach-monitoring">Breach Alert</a></td><td>Individuals and companies<br><span class="where">Global</span></td><td>Sole Engineer</td><td>Sep 2026</td><td>Live; dark-web watcher plus 3 breach sources</td></tr>
+<tr><td><a href="#harambee-shop-group-buying-at-wholesale-prices">Harambee Shop</a></td><td>Households and students<br><span class="where">Kenya</span></td><td>Sole Engineer and Product Owner</td><td>Sep 2026 – present</td><td>Deployed; live pilot with real payments</td></tr>
+<tr><td><a href="#course-evaluation-platform">Course Evaluation Platform</a></td><td>University teaching quality<br><span class="where">Strathmore University, Kenya</span></td><td>Sole Engineer</td><td>Jul 2026 – present (first version Feb 2025)</td><td>In use by academic directors</td></tr>
+<tr><td><a href="#climate-stress-analytics-for-banks">Climate-Stress Analytics for Banks</a></td><td>Kenya Bankers Association, Africa Climate &amp; Nature Data Platform<br><span class="where">Kenya and Tanzania</span></td><td>Technical Analyst and Developer</td><td>Sep 2025 – Nov 2025</td><td>Climate risk turned into default risk</td></tr>
+<tr><td><a href="#messageheard-ai-video-production-platform">MessageHeard</a></td><td>Media production<br><span class="where">United States and United Kingdom</span></td><td>Full-Stack Developer</td><td>Nov 2025 – Jan 2026</td><td>Multi-team platform, transcript to video</td></tr>
+<tr><td><a href="#stock-research-assistant">Stock Research Assistant</a></td><td>Nairobi Securities Exchange analysts<br><span class="where">Nairobi, Kenya</span></td><td>Lead Engineer</td><td>May 2026 – present</td><td>In use; sold to another business</td></tr>
+<tr><td><a href="#tumaini-support-care-healthcare-staffing-platform">Tumaini Support &amp; Care</a></td><td>Healthcare staffing company<br><span class="where">United States</span></td><td>Sole Engineer</td><td>Aug 2026</td><td>Live; candidate, employer and admin portals</td></tr>
+<tr><td><a href="#avodah-bilingual-farming-assistant">Avodah</a></td><td>Poultry farmers (university capstone)<br><span class="where">Kenya</span></td><td>Developer</td><td>Nov 2024 – 2026</td><td>94% top-3 retrieval in English and Kiswahili</td></tr>
+<tr><td><a href="#climate-risk-management-toolkit-prototype">Climate Risk Management Toolkit (prototype)</a></td><td>British International Investment<br><span class="where">Global</span></td><td>Sole Engineer</td><td>Sep 2026 – Oct 2026</td><td>Working prototype, in proposal and review</td></tr>
+<tr><td><a href="#trademark-registry-upgrade">Trademark Registry Upgrade</a></td><td>Federal Ministry of Industry, Trade and Investment<br><span class="where">Nigeria</span></td><td>Software Engineer</td><td>Sep 2025 – May 2026</td><td>Upgraded registration system in use</td></tr>
+<tr><td><a href="#chat-your-finances-ai-finance-assistant">Chat Your Finances</a></td><td>Personal finance<br><span class="where">Kenya</span></td><td>Lead Developer</td><td>Jan 2026 – Jun 2026</td><td>AI assistant on WhatsApp, Telegram, web</td></tr>
           </tbody>
         </table>
       </div>
@@ -123,150 +131,215 @@
         <article class="proj reveal" id="national-innovation-portal-ricc">
           <header>
             <span class="proj-n">01</span>
-            <div><h3>National Innovation Portal (RICC)</h3><p class="proj-meta">Federal Ministry of Education, Nigeria  ·  Frontend &amp; UI/UX Lead  ·  ricc.education.gov.ng</p></div>
+            <div><h3>National Innovation Portal (RICC)</h3><p class="proj-meta">Federal Ministry of Education  ·  Nigeria  ·  Lead Frontend Engineer  ·  Jan 2026 – Jun 2026</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> A live national platform, prepared for a national rollout targeting 2,000+ institutional responses, that collects data even where there is no internet.</p>
-          <p><b>The problem.</b> Nigeria had no reliable picture of how research moves from universities, institutes and innovators into the market. Data came in through Google Forms, often from places with weak or no internet, and the same innovation was reported again and again. Nobody could see where promising work was getting stuck.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Researched why universities, industry, investors and regulators weren't connecting, and turned the findings into user journeys and questionnaires for each stakeholder group.</li><li>Led frontend development of an offline-first web app: field agents complete long questionnaires with no connection, answers are kept on the device and sync automatically once they are back online.</li><li>Built smart questionnaires that hide questions that don't apply, with word limits, ranked choices, state-to-local-government location logic, consent tracking and reference numbers.</li><li>Built the analytics dashboards (readiness scorecards, funding maps, participation by region and a &quot;valley of death&quot; chart of where innovations drop off), an evidence-verification panel for the secretariat, a chatbot that answers with live charts, and terms, consent and privacy controls.</li><li>Ran end-to-end testing on staging before every production release; historical data was cleaned so 62 submissions became 298 distinct innovations with 105 duplicates removed.</li></ul>
-          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>React</li><li>TypeScript</li><li>offline web app (service workers)</li><li>FastAPI</li><li>PostgreSQL</li></ul>
+          <p class="proj-result"><b>Result</b> Live at ricc.education.gov.ng on the government's own servers, and grown from a national survey into a full innovator-to-funding pipeline. Historical data was cleaned so 62 submissions became 298 distinct innovations, with 105 duplicates removed.</p>
+          <p><b>Problem and goal.</b> Nigeria had no reliable view of how research moves from universities, institutes and innovators into the market. Data came in through Google Forms, often from areas with weak or no internet, duplicate reports were common, and funders had no way to find investable work. The goal was one national platform that collects trustworthy data from every stakeholder group, shows where innovations stall, and connects the best of them to funding.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Research:</b> found why universities, industry, investors and regulators weren't connecting, and turned that into user journeys and stakeholder questionnaires.</li><li><b>Frontend lead:</b> main frontend engineer across almost every module, alongside the backend lead, with 93 merged pull requests between January and June 2026.</li><li><b>Offline-first data collection:</b> field agents complete long questionnaires with no connection, and answers sync automatically once they're back online. The questionnaires hide questions that don't apply and include repeating groups, matrices, file uploads, word limits, ranked choices, location logic, consent tracking and reference numbers.</li><li><b>Sign-off and verification:</b> e-signing by the respondent and an authorising officer, send-back for corrections, an evidence-verification panel for the secretariat, and signed PDF receipts.</li><li><b>Analytics:</b> <ul><li>a Nigeria heat map and a &quot;valley of death&quot; chart showing where innovations drop off</li><li>readiness scorecards, funding maps, sector and return-on-investment charts</li><li>a qualitative tagging dashboard and a chatbot that answers questions about the data with live charts</li><li>Excel exports, after replacing a vulnerable spreadsheet library</li></ul></li><li><b>Innovators and IP:</b> registration and profiles, a claim flow for existing records, IP readiness with document upload, an inventorship register with co-inventor consent, trade-secret access behind an NDA, and technology-readiness self-assessments with eligibility results.</li><li><b>Matchmaking and funding:</b> <ul><li>a &quot;For You&quot; feed matching innovators to funders, and an innovation feed for funders (save, dismiss, express interest)</li><li>funder team management and the admin funding-agreement and milestone set-up</li><li>three-party milestone approval, dispute threads and a funded-innovator dashboard</li><li>the M&amp;E dashboard and public record pages</li></ul></li><li><b>Testing and security:</b> led about 30 bug-fix pull requests in the June QA cycle, including security fixes (path traversal, spreadsheet formula injection, personal data in audit logs), and wrote the pre-handover QA pack of 142 test cases across 20 modules.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>React</li><li>TypeScript</li><li>offline web app (service workers)</li><li>SurveyJS</li><li>Recharts</li><li>Leaflet</li><li>FastAPI</li><li>PostgreSQL with pgvector</li></ul>
         </article>
 
-        <article class="proj reveal" id="ngao-whatsapp-data-collection">
+        <article class="proj reveal" id="ngao-whatsapp-data-collection-platform">
           <header>
             <span class="proj-n">02</span>
-            <div><h3>NGAO: WhatsApp Data Collection</h3><p class="proj-meta">Last-mile reporting, Kenya  ·  Full-Stack Developer</p></div>
+            <div><h3>NGAO: WhatsApp Data Collection Platform</h3><p class="proj-meta">Last-mile reporting  ·  Kenya  ·  Full-Stack Developer  ·  Mar 2026 – Jun 2026 (development); rolling out</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> Rolled out and used by more than 3,000 people.</p>
-          <p><b>The problem.</b> Field reporting such as tree planting and seedling sales ran on paper and informal messages: slow, hard to verify and easy to fake.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Built the engines and orchestrators that run each conversation: button-led flows in English and Kiswahili that take text, photos, voice notes and location.</li><li>Built answer correction that checks a dictionary first, falls back to AI, asks &quot;Did you mean…?&quot; and learns from every confirmation, so messy answers become clean data.</li><li>Compared each photo's location data with the shared location and flagged mismatches, and kept every submission as a permanent record.</li><li>Connected the backend to the admin dashboards and checked dashboard figures against the raw records and CSV export; a schema builder lets administrators launch new pipelines without new code.</li></ul>
-          <ul class="chips" aria-label="Tools"><li>NestJS</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>WhatsApp Business API</li><li>Twilio (voice and images)</li><li>LLMs</li></ul>
+          <p class="proj-result"><b>Result</b> Development finished in June 2026; rolled out and growing, with more than 3,000 users.</p>
+          <p><b>Problem and goal.</b> Field reporting such as tree planting and seedling sales ran on paper and informal messages. It was slow, hard to verify and easy to fake. The goal was to let people report through WhatsApp, with every submission kept as a permanent record administrators can trust.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Conversation engine:</b> built the engines and orchestrators that run each conversation. Flows are button-led, in English and Kiswahili, and accept text, photos, voice notes and location.</li><li><b>Answer correction:</b> misspelled answers are matched against a dictionary first, then AI. The person confirms (&quot;Did you mean…?&quot;), and the engine learns from every confirmation.</li><li><b>Photo checks:</b> each photo's location data is compared with the shared location, and mismatches are flagged without blocking the reporter.</li><li><b>Dashboards:</b> connected the backend to the admin dashboards, and wrote the reporting reference that checks every dashboard figure against the raw records and the CSV export.</li><li><b>No-code pipelines:</b> a schema builder lets administrators launch new pipelines (tree planting, seedling marketplace, purchasing) without new code.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>NestJS</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>WhatsApp Business API</li><li>Twilio (voice, images)</li><li>LLMs</li></ul>
+        </article>
+
+        <article class="proj reveal" id="kenya-climate-nature-directory-research-and-publishing-pipeline">
+          <header>
+            <span class="proj-n">03</span>
+            <div><h3>Kenya Climate &amp; Nature Directory: Research and Publishing Pipeline</h3><p class="proj-meta">Climate Shapers Africa  ·  Africa  ·  Sole Engineer  ·  Jul 2026 – present</p></div>
+          </header>
+          <p class="proj-result"><b>Result</b> Running in production every night inside free tiers; the only running cost is the domain.</p>
+          <p><b>Problem and goal.</b> Keeping the directory current was manual: searching Google for PDFs, judging relevance by eye, typing metadata by hand, reconciling authors in Excel, uploading covers one by one and loading the site ten rows at a time. The goal was to automate everything except the chief editor's final approval, at almost no running cost.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Discovery:</b> a nightly pipeline searches six research sources (World Bank, OpenAlex, Crossref, Semantic Scholar, arXiv, CORE), removes duplicates, downloads and checks each PDF, extracts the text and makes a cover image.</li><li><b>AI review:</b> AI decides whether each document is about Kenya, East Africa or Africa and climate, keeping a reason for every rejection, then extracts the title, year, publisher, authors, document type, abstract and themes, with OCR for scanned pages and automatic switch-over between AI providers.</li><li><b>Human approval:</b> rules in code check every result before it joins the chief editor's queue. The editor approves, edits or rejects with a reason, and approval publishes the record and rebuilds the public site.</li><li><b>Reliability:</b> each document saves its progress, so a crash or a used-up AI quota simply resumes on the next run. Weekly link checks, author enrichment, record repair and database backups run on their own.</li><li><b>Migration:</b> moved 2,774 existing records into a new database with row-level security.</li><li><b>Beyond the directory:</b> <ul><li>News Studio: daily climate stories written from the source text, with AI-checked header images</li><li>Content Studio: turns papers into LinkedIn posts, carousels and explainer videos</li><li>an opportunity tracker that emails Climate Shapers a daily digest of relevant grants and tenders</li><li>everything an AI writes waits for human approval</li></ul></li></ul>
+          <ul class="chips" aria-label="Tools"><li>Python</li><li>SvelteKit</li><li>Astro</li><li>Supabase (PostgreSQL)</li><li>Cloudflare Pages and R2</li><li>GitHub Actions</li><li>LLMs (Cerebras, Groq, OpenRouter)</li><li>Remotion</li></ul>
         </article>
 
         <article class="proj reveal" id="propflow-property-management-platform">
           <header>
-            <span class="proj-n">03</span>
-            <div><h3>PropFlow: Property Management Platform</h3><p class="proj-meta">Landlords and managing agents, East Africa  ·  Lead Engineer &amp; Product Lead</p></div>
-          </header>
-          <p class="proj-result"><b>Result</b> In production with users in Kenya, Uganda and Rwanda; partners met in both countries and five CEOs and their CTOs trained in Rwanda.</p>
-          <p><b>The problem.</b> Landlords run rent, tenants and repairs across spreadsheets, WhatsApp threads and paper files, so money and documents slip through the cracks.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Designed and built, with a partner, one system for the whole tenancy: rent roll and billing, arrears, late fees, deposits and reconciliation, leases generated and signed online, repairs with contractor approvals, online payments and a full audit log.</li><li>Tenants report issues on WhatsApp with photos; emergencies trigger an automatic phone call.</li><li>AI proposes the next step from tenant messages, and every suggestion is checked against business rules before anything happens.</li><li>Shipped production-grade: containerised deployment, background scheduler, nightly backups, error monitoring, automated tests and a written recovery plan. I maintain it.</li><li>Travelled to Uganda and Rwanda to meet partner companies, including the leadership of Keystone Technologies and Unispace, and trained five CEOs, property owners and their CTOs in Rwanda.</li></ul>
-          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Twilio</li><li>WhatsApp</li><li>Paystack</li><li>Docker</li><li>Sentry</li></ul>
-        </article>
-
-        <article class="proj reveal" id="revenue-intelligence-assistant">
-          <header>
             <span class="proj-n">04</span>
-            <div><h3>Revenue Intelligence Assistant</h3><p class="proj-meta">Nairobi City County  ·  Lead Engineer</p></div>
+            <div><h3>PropFlow: Property Management Platform</h3><p class="proj-meta">Landlords and managing agents  ·  Kenya, Uganda, Rwanda and the UK  ·  Lead Engineer and Product Lead  ·  Jun 2026 – Sep 2026 (development); live and maintained</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> Revenue staff get correct figures from the county's own data in seconds, in plain words.</p>
-          <p><b>The problem.</b> Staff searched monthly spreadsheets in different layouts to answer simple questions about collections, and some money was counted twice.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Built a tested import pipeline that reads every report layout into one clean database.</li><li>Added an AI assistant staff can question on WhatsApp or the web; only approved numbers get answers.</li><li>Gave the AI read-only access through a restricted database account, so it can never change records, with automatic switch-over if an AI provider fails.</li><li>Audited answers against the original reports and fixed double-counting and wrong-period results before go-live.</li></ul>
-          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>Supabase/PostgreSQL</li><li>LLMs</li><li>WhatsApp</li><li>Vitest</li></ul>
+          <p class="proj-result"><b>Result</b> In production with users in Kenya, Uganda, Rwanda and the UK. Ongoing maintenance.</p>
+          <p><b>Problem and goal.</b> Landlords run rent, tenants and repairs across spreadsheets, WhatsApp threads and paper files, so money and documents slip through the cracks. The goal was one system for the whole tenancy, reachable by tenants on the channel they already use.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Platform:</b> designed and built it with a partner. It covers the rent roll, billing, arrears, late fees, deposits and reconciliation; leases generated and signed online; repairs with contractor approvals; online payments; and a full audit log.</li><li><b>Tenant channel:</b> tenants report issues on WhatsApp with photos, and emergencies trigger an automatic phone call.</li><li><b>Safe AI:</b> AI proposes the next step from tenant messages, and every suggestion is checked against business rules before anything happens.</li><li><b>Production:</b> containerised deployment, a background scheduler, nightly backups, error monitoring, automated tests and a written recovery plan.</li><li><b>Expansion:</b> met partner companies in Uganda and Rwanda, including the leadership teams of Keystone Technologies and Unispace, and trained five CEOs, property owners and their CTOs in Rwanda.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Twilio</li><li>WhatsApp</li><li>Paystack</li><li>Docker</li><li>Sentry</li></ul>
         </article>
 
         <article class="proj reveal" id="cross-border-investment-platform">
           <header>
             <span class="proj-n">05</span>
-            <div><h3>Cross-Border Investment Platform</h3><p class="proj-meta">Confidential fintech client  ·  Frontend Engineer</p></div>
+            <div><h3>Cross-Border Investment Platform</h3><p class="proj-meta">Fintech, diaspora investment  ·  US and Europe to Kenya, Nigeria, Mauritius and South Africa  ·  Lead Frontend Engineer, with backend, QA and research  ·  Aug 2025 – Jun 2026</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> Signed off in user acceptance testing, deployed to production and handed over with source code and documentation.</p>
-          <p><b>The problem.</b> People living abroad had no simple, trusted way to invest back home from the apps they already use.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Developed and deployed investor onboarding with identity verification (KYC), the marketplace and wallet funding.</li><li>Built for money moving across several countries, within regulatory and foreign-exchange rules, and kept the design working when a key provider changed mid-build.</li><li>Made every amount reconcile exactly, with security planned in advance and an incident playbook ready.</li></ul>
-          <ul class="chips" aria-label="Tools"><li>React</li><li>Next.js</li><li>Python</li><li>PostgreSQL</li></ul>
+          <p class="proj-result"><b>Result</b> Signed off in user acceptance testing, deployed to production, and handed over with source code and documentation.</p>
+          <p><b>Problem and goal.</b> People living abroad had no simple, trusted way to invest back home from the money-transfer and banking apps they already use. The goal was an investment marketplace that partner apps can embed, with identity checks and compliance built in.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Frontend:</b> main frontend engineer for eleven months. Built the partner, fund-manager and admin portals and sign-in: investor onboarding with identity verification (KYC), the marketplace, wallet funding, KPIs and charts, portfolios, transactions, product creation and review, an approvals queue, team invitations and an investment journey timeline.</li><li><b>Hardening:</b> patched vulnerable dependencies, added a logger that strips personal data, security headers, exact money handling, strict role checks, error boundaries, accessibility checks and test-coverage gates in CI.</li><li><b>Backend:</b> built the partner and fund-manager dashboard APIs, the cash-out flow with investor consent, organisation invitations and stand-in payment rails so the full investment flow could be demonstrated end to end. Found and fixed a production outage on the fund-manager dashboard.</li><li><b>Research:</b> wrote the roadmap audit, the workflow explainer and the frontend-to-backend API specification.</li><li><b>QA and UAT:</b> fixed QA findings, reviewed teammates' pull requests and ran end-to-end QA checklists ahead of user acceptance testing.</li><li><b>Constraints:</b> designed around regulatory and foreign-exchange rules across several countries and a key provider changing mid-build; every amount reconciled exactly, and security was planned in advance with an incident playbook.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>React</li><li>TypeScript</li><li>NestJS</li><li>Python</li><li>PostgreSQL</li><li>Docker</li></ul>
         </article>
 
-        <article class="proj reveal" id="climate-nature-risk-toolkit">
+        <article class="proj reveal" id="revenue-intelligence-assistant">
           <header>
             <span class="proj-n">06</span>
-            <div><h3>Climate &amp; Nature Risk Toolkit</h3><p class="proj-meta">British International Investment  ·  Consultant Developer</p></div>
+            <div><h3>Revenue Intelligence Assistant</h3><p class="proj-meta">Nairobi City County  ·  Kenya  ·  Lead Engineer  ·  Mar 2026</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> Risk and sustainability teams can work through the whole framework and finish with a complete, shareable record.</p>
-          <p><b>The problem.</b> A climate and nature risk framework for financial institutions lived in long PDFs and spreadsheets that finance staff struggled to apply in real decisions.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Broke the framework into modules with guided, step-by-step workbenches: maturity assessment, rapid client climate screening, a calculator for the emissions linked to loans and investments, and stress-test calculators.</li><li>Linked records across institutions, clients, projects and portfolios, with CSV import, PDF, Excel and Word exports and admin analytics.</li></ul>
-          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li></ul>
+          <p class="proj-result"><b>Result</b> Staff get revenue figures from the county's own data in seconds.</p>
+          <p><b>Problem and goal.</b> Revenue staff searched monthly spreadsheets in different layouts to answer simple questions about collections, and some money was counted twice. The goal was correct answers in plain words, in seconds.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Data import:</b> built a tested pipeline that reads every report layout into one clean database.</li><li><b>AI assistant:</b> staff ask questions on WhatsApp or the web, and only approved phone numbers get answers.</li><li><b>Safety:</b> the AI has read-only access through a restricted database account, so it can never change the county's records, and it switches AI provider automatically if one fails.</li><li><b>Accuracy:</b> audited answers against the original reports, and fixed double-counting and wrong-period results before staff relied on it.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>Supabase/PostgreSQL</li><li>LLMs</li><li>WhatsApp</li><li>Vitest</li></ul>
         </article>
 
-        <article class="proj reveal" id="messageheard-ai-video-production-platform">
+        <article class="proj reveal" id="breach-alert-dark-web-and-data-breach-monitoring">
           <header>
             <span class="proj-n">07</span>
-            <div><h3>MessageHeard: AI Video Production Platform</h3><p class="proj-meta">Media production  ·  Full-Stack Developer</p></div>
+            <div><h3>Breach Alert: Dark-Web and Data-Breach Monitoring</h3><p class="proj-meta">Individuals and companies  ·  Global  ·  Sole Engineer  ·  Sep 2026</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> A working multi-team platform that takes a podcast transcript to finished scene images and video.</p>
-          <p><b>The problem.</b> A team was producing AI-generated video from podcast transcripts with a single-user prototype that couldn't support several teams at once.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Built the backend and the interface, and trained the custom image models.</li><li>Delivered sign-in with roles and invitations and separation between organisations; transcripts that break into timed scenes; an asset library of characters and objects; and AI prompt suggestions per scene.</li><li>Built a generation queue that runs image and video jobs in parallel with live status, retry and cancel, delivered to an 8.5-week plan with weekly client check-ins, CI/CD and a staging environment.</li></ul>
-          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>Python</li><li>PostgreSQL</li><li>Clerk</li><li>image and video generation models</li><li>LoRA</li></ul>
+          <p class="proj-result"><b>Result</b> Went live covering 169 ransomware leak sites; its first test account surfaced one critical and two high-severity findings.</p>
+          <p><b>Problem and goal.</b> People and companies usually find out their passwords or data are in criminal hands too late, and too vaguely, to act on the same day. The goal was alerts precise enough to act on immediately.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Proof of ownership:</b> people verify what they monitor: their sign-in email, extra addresses by a time-limited six-digit code, and company domains by a DNS record.</li><li><b>Three data sources:</b> breach databases, infostealer malware logs and ransomware leak-site listings. Duplicates are removed, each finding gets a severity, and every alert comes with plain-language next steps for people and for companies.</li><li><b>Dark-web watcher:</b> a separate service that reads only approved leak-site pages over Tor, never follows links or downloads files, keeps only masked extracts, and matches against monitored addresses &quot;blind&quot; using one-way fingerprints, so it never holds the watchlist.</li><li><b>Privacy by design:</b> emails are encrypted at rest and matched by keyed fingerprints, so a copy of the database reveals nothing; passwords are checked by sending only five characters of their hash and are never stored.</li><li><b>Operations:</b> urgent alerts go out immediately and minor ones in a weekly summary; an admin review desk holds uncertain matches until a person approves them; 114 automated tests; three services deployed with health checks.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>Drizzle</li><li>PostgreSQL</li><li>Clerk</li><li>Resend</li><li>Tor</li><li>Docker</li><li>Render</li></ul>
         </article>
 
-        <article class="proj reveal" id="stock-research-assistant">
+        <article class="proj reveal" id="harambee-shop-group-buying-at-wholesale-prices">
           <header>
             <span class="proj-n">08</span>
-            <div><h3>Stock Research Assistant</h3><p class="proj-meta">Nairobi Securities Exchange analysts  ·  Lead Engineer</p></div>
+            <div><h3>Harambee Shop: Group Buying at Wholesale Prices</h3><p class="proj-meta">Households and students  ·  Kenya  ·  Sole Engineer and Product Owner  ·  Sep 2026 – present</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> Used by analysts in Kenya for research and decision support.</p>
-          <p><b>The problem.</b> Analysts spend hours gathering prices, Central Bank data and news before they can start analysing a stock.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Adapted an open-source multi-agent framework into TypeScript: analyst agents study prices, the economy and news, debate the case for and against, a trader agent makes the call and a risk check tests it against Kenyan inflation.</li><li>Runs automatically every morning before the market opens, with automatic AI-provider failover and a searchable research knowledge base.</li><li>Logs every prediction and scores it later, so the system's accuracy is visible.</li></ul>
-          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Vercel AI SDK</li><li>GitHub Actions</li><li>Redis</li></ul>
+          <p class="proj-result"><b>Result</b> Deployed and running a controlled pilot around Strathmore and Madaraka, with real M-Pesa payments.</p>
+          <p><b>Problem and goal.</b> In Kenya, wholesale prices run 13–33% below retail, but only in bulk that a single household can't afford or store. The goal was to let neighbours buy wholesale together, safely, with M-Pesa.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Shared baskets:</b> a group fills whole supplier packs together, each person takes single items and pays their share by M-Pesa, and the goods are bought wholesale and delivered on Saturday.</li><li><b>Pricing engine:</b> passes half of every saving to the customer, with a discount ladder that rewards taking more of a pack, and an audit log on every money and pricing decision.</li><li><b>Payments:</b> verified M-Pesa confirmations, account credit, re-pricing when a basket closes, refunds, and cash-outs to M-Pesa with automatic retries.</li><li><b>Pilot operations:</b> imported and checked a real supplier catalogue against retail prices, set owner-approved risk limits, and built the Saturday purchase planner, receiving checks and delivery tracking.</li><li><b>Testing:</b> test programs for the backend, about 40 API test suites, failure-forcing mocks for payments and messaging, and browser tests with zero accessibility findings on mobile and desktop.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Free Pascal (mORMot2)</li><li>Next.js</li><li>PostgreSQL</li><li>Redis</li><li>Clerk</li><li>Paystack</li><li>WhatsApp</li><li>Docker</li><li>Render</li></ul>
         </article>
 
-        <article class="proj reveal" id="trademark-registry-upgrade">
+        <article class="proj reveal" id="course-evaluation-platform">
           <header>
             <span class="proj-n">09</span>
-            <div><h3>Trademark Registry Upgrade</h3><p class="proj-meta">Federal Ministry of Industry, Trade and Investment, Nigeria  ·  Software Engineer</p></div>
+            <div><h3>Course Evaluation Platform</h3><p class="proj-meta">University teaching quality  ·  Strathmore University, Kenya  ·  Sole Engineer  ·  Jul 2026 – present (first version Feb 2025)</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> An upgraded registration and administration workflow in use by the ministry's administrators.</p>
-          <p><b>The problem.</b> The ministry's existing trademark system needed an upgrade to keep up with registrars and applicants.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Rebuilt the registration and administration workflows on the upgraded system.</li><li>Kept records consistent from filing to approval and made the admin screens easy for non-technical staff.</li></ul>
-          
+          <p class="proj-result"><b>Result</b> In use by the academic directors to run evaluations and act on the results. It rebuilds an earlier Django and React version that increased student feedback rates and gave staff timely analytics.</p>
+          <p><b>Problem and goal.</b> Course feedback was low and hard to act on: students worried about anonymity, and directors couldn't see which courses needed attention. The goal was honest, anonymous feedback that leads to action.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Anonymous by design:</b> students need no account, just a short random link; no identity or IP address is stored, while duplicate submissions are still blocked.</li><li><b>Director dashboards:</b> alarm and applause thresholds per department, trends, and round-to-round comparisons that flag a change of lecturer and skip unfair comparisons.</li><li><b>AI summaries:</b> comments sorted into &quot;going well&quot; and &quot;needs attention&quot; with sentiment, released only once enough students have responded, and correctable by reviewers.</li><li><b>Follow-through:</b> follow-up tasks with owners, due dates and evidence; email reports, commendations and alarms; CSV, Excel and branded PDF exports limited to what each role may see.</li><li><b>Security and testing:</b> hashed passwords, a permission check and audit entry on every change, data kept separate per institution, and 49 automated tests in CI.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Vercel</li><li>Claude / NVIDIA NIM</li></ul>
         </article>
 
         <article class="proj reveal" id="climate-stress-analytics-for-banks">
           <header>
             <span class="proj-n">10</span>
-            <div><h3>Climate-Stress Analytics for Banks</h3><p class="proj-meta">Kenya and Tanzania Bankers Associations  ·  Technical Analyst</p></div>
+            <div><h3>Climate-Stress Analytics for Banks</h3><p class="proj-meta">Kenya Bankers Association, Africa Climate &amp; Nature Data Platform  ·  Kenya and Tanzania  ·  Technical Analyst and Developer  ·  Sep 2025 – Nov 2025</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> Climate risk brought into how banks think about credit risk.</p>
-          <p><b>The problem.</b> Climate risk wasn't part of how banks judged the chance of loan default.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Built exposure analytics linking climate-stress indicators to the probability of default, with NCBA, Equity Bank and Victoria Commercial Bank among the stakeholders.</li></ul>
-          <ul class="chips" aria-label="Tools"><li>Python</li><li>data analysis and modelling</li></ul>
+          <p class="proj-result"><b>Result</b> A working analytics prototype that shows how climate risk changes a small business's chance of default and expected loss, county by county.</p>
+          <p><b>Problem and goal.</b> Climate risk wasn't part of how banks judged credit risk, least of all for small businesses, whose exposure to drought, floods or a carbon price depends on where they are and what they do. The goal was to show lenders that link in numbers.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>County risk map:</b> a small-business climate-risk dashboard covering all 47 Kenyan counties, with inputs for county, industry, business model, asset type and asset value.</li><li><b>Risk scoring:</b> physical risk (drought, flood, heatwave, storm) and transition risk (sector carbon intensity, exposure to carbon pricing).</li><li><b>Credit impact:</b> turns the climate score into probability of default, loss given default and expected credit loss.</li><li><b>Context for lenders:</b> a scenarios guide (baseline, optimistic, pessimistic) and banking-sector views of exposure by sector, green lending and carbon intensity, with NCBA, Equity Bank and Victoria Commercial Bank among the stakeholders.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Recharts</li><li>Leaflet</li><li>Vercel</li></ul>
+        </article>
+
+        <article class="proj reveal" id="messageheard-ai-video-production-platform">
+          <header>
+            <span class="proj-n">11</span>
+            <div><h3>MessageHeard: AI Video Production Platform</h3><p class="proj-meta">Media production  ·  United States and United Kingdom  ·  Full-Stack Developer  ·  Nov 2025 – Jan 2026</p></div>
+          </header>
+          <p class="proj-result"><b>Result</b> A working multi-team platform that turns a transcript into finished scene images and video.</p>
+          <p><b>Problem and goal.</b> A team was producing AI-generated video from podcast transcripts with a single-user prototype that couldn't support several teams at once. The goal was a production platform several organisations can use in parallel.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Full stack:</b> built the backend and the interface, and trained the custom image models.</li><li><b>Teams and access:</b> sign-in, roles, invitations and separation between organisations.</li><li><b>Production workflow:</b> transcripts break into timed scenes, with an asset library of characters and objects and AI prompt suggestions for each scene.</li><li><b>Generation queue:</b> image and video jobs run in parallel with live status, retry and cancel.</li><li><b>Delivery:</b> worked to an 8.5-week plan with weekly client check-ins, CI/CD and a staging environment for client testing.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>Python</li><li>PostgreSQL</li><li>Clerk</li><li>image and video models</li><li>LoRA</li></ul>
+        </article>
+
+        <article class="proj reveal" id="stock-research-assistant">
+          <header>
+            <span class="proj-n">12</span>
+            <div><h3>Stock Research Assistant</h3><p class="proj-meta">Nairobi Securities Exchange analysts  ·  Nairobi, Kenya  ·  Lead Engineer  ·  May 2026 – present</p></div>
+          </header>
+          <p class="proj-result"><b>Result</b> Used by analysts in Kenya for research and decision support, and later sold to another business, where it is still running.</p>
+          <p><b>Problem and goal.</b> Analysts spend hours gathering prices, Central Bank data and news before analysing a stock. The goal was to automate the first round of research.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Multi-agent pipeline:</b> adapted an open-source multi-agent framework into TypeScript: analyst agents study prices, the economy and news, debate the case for and against, a trader agent makes the call and a risk check tests it against Kenyan inflation.</li><li><b>Daily run:</b> runs automatically every morning before the market opens, with automatic AI-provider failover and a searchable research knowledge base.</li><li><b>Platform:</b> a stock screener, company fundamentals pages and daily brief videos.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Vercel AI SDK</li><li>GitHub Actions</li><li>Redis</li></ul>
+        </article>
+
+        <article class="proj reveal" id="tumaini-support-care-healthcare-staffing-platform">
+          <header>
+            <span class="proj-n">13</span>
+            <div><h3>Tumaini Support &amp; Care: Healthcare Staffing Platform</h3><p class="proj-meta">Healthcare staffing company  ·  United States  ·  Sole Engineer  ·  Aug 2026</p></div>
+          </header>
+          <p class="proj-result"><b>Result</b> Live, with separate portals for care workers, employers and the client's staff.</p>
+          <p><b>Problem and goal.</b> The client needed one place to match nurses and caregivers with care employers and to handle urgent staffing requests, instead of email and phone calls.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Candidate portal:</b> profiles with skills, availability and certifications with expiry dates, private CV upload, job applications and status tracking from submitted to offered.</li><li><b>Employer portal:</b> post jobs for review, review applicants, invite team members and raise staffing requests marked standard, urgent or emergency.</li><li><b>Back office:</b> moderation and verification of employers, a staffing-request pipeline from new to fulfilled, site content, and an audit log of every admin action.</li><li><b>Security and testing:</b> every page and action re-checks the user's role on the server; rate limiting, email notifications, and browser and unit tests on the main flows.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL (Neon)</li><li>Upstash Redis</li><li>Resend</li><li>Vercel</li></ul>
+        </article>
+
+        <article class="proj reveal" id="avodah-bilingual-farming-assistant">
+          <header>
+            <span class="proj-n">14</span>
+            <div><h3>Avodah: Bilingual Farming Assistant</h3><p class="proj-meta">Poultry farmers (university capstone)  ·  Kenya  ·  Developer  ·  Nov 2024 – 2026</p></div>
+          </header>
+          <p class="proj-result"><b>Result</b> The best design found the right answer section in its top three results 94% of the time (88% for Kiswahili) and its first result 79% of the time.</p>
+          <p><b>Problem and goal.</b> Small poultry farmers need reliable answers in the language they speak, and a chatbot that guesses is worse than none. The goal was an assistant that finds the right answer, or says it doesn't know.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Assistant:</b> a WhatsApp assistant over a curated poultry knowledge base, in English and Kiswahili.</li><li><b>Measured retrieval:</b> compared four ways of finding the right answer (keyword search, multilingual embeddings, a hybrid and an LLM-guided method) and three ways of handling Kiswahili questions, on a 40-question test set.</li><li><b>Answer quality:</b> judged answers were 85–88% faithful to the source, and every out-of-scope question was refused.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL with pgvector</li><li>multilingual embeddings</li><li>Groq LLMs</li><li>Vitest</li><li>Playwright</li></ul>
+        </article>
+
+        <article class="proj reveal" id="climate-risk-management-toolkit-prototype">
+          <header>
+            <span class="proj-n">15</span>
+            <div><h3>Climate Risk Management Toolkit (prototype)</h3><p class="proj-meta">British International Investment  ·  Global  ·  Sole Engineer  ·  Sep 2026 – Oct 2026</p></div>
+          </header>
+          <p class="proj-result"><b>Result</b> A working prototype of all 23 modules, received positively and now in the proposal and review stage.</p>
+          <p><b>Problem and goal.</b> BII's climate and nature risk toolkit for financial institutions lives in guidance documents and spreadsheets: users must read the guidance, work through the spreadsheets and assemble the outputs themselves. The goal was one guided web app that does the work with them.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Guided start:</b> asks for the user's role, goal and task and builds a combined work plan.</li><li><b>All 23 modules:</b> working tools for every module, with dedicated journeys for institution maturity, client climate screening and financed emissions, and calculators such as stress testing (expected loss, baseline versus stressed).</li><li><b>Linked records:</b> institutions, clients, exposures and portfolios reuse saved inputs, with CSV import, drafts with revision history and PDF, Excel, Word and JSON exports.</li><li><b>Accuracy:</b> a source audit found errors in the earlier app and in BII's own workbooks, which the prototype corrects; captioned learning videos are built from BII's diagrams.</li></ul>
+          <ul class="chips" aria-label="Tools"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>ExcelJS</li><li>Render</li></ul>
+        </article>
+
+        <article class="proj reveal" id="trademark-registry-upgrade">
+          <header>
+            <span class="proj-n">16</span>
+            <div><h3>Trademark Registry Upgrade</h3><p class="proj-meta">Federal Ministry of Industry, Trade and Investment  ·  Nigeria  ·  Software Engineer  ·  Sep 2025 – May 2026</p></div>
+          </header>
+          <p class="proj-result"><b>Result</b> An upgraded registration and administration workflow in use by the ministry's administrators.</p>
+          <p><b>Problem and goal.</b> The ministry's existing trademark system needed an upgrade to keep up with registrars and applicants. The goal was faster, more reliable registration and administration.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Workflows:</b> rebuilt the registration and administration workflows on the upgraded system.</li><li><b>Data integrity:</b> kept records consistent from filing to approval.</li><li><b>Usability:</b> made the admin screens easy for non-technical staff.</li></ul>
+          
         </article>
 
         <article class="proj reveal" id="chat-your-finances-ai-finance-assistant">
           <header>
-            <span class="proj-n">11</span>
-            <div><h3>Chat Your Finances: AI Finance Assistant</h3><p class="proj-meta">Personal finance, Kenya  ·  Lead Developer</p></div>
+            <span class="proj-n">17</span>
+            <div><h3>Chat Your Finances: AI Finance Assistant</h3><p class="proj-meta">Personal finance  ·  Kenya  ·  Lead Developer  ·  Jan 2026 – Jun 2026</p></div>
           </header>
-          <p class="proj-result"><b>Result</b> An assistant that answers money and tax questions from a person's own statements on WhatsApp, Telegram and the web.</p>
-          <p><b>The problem.</b> People struggle to see where their money goes and find filing taxes stressful.</p>
-          <p class="proj-label"><b>What I did</b></p>
-          <ul><li>Reads M-Pesa, bank and payslip statements, including scanned and password-protected PDFs, using OCR.</li><li>Answers questions from the user's own records using retrieval-based AI; a tax engine reads P9 forms to guide KRA filing; subscription billing through Paystack.</li></ul>
+          <p class="proj-result"><b>Result</b> An assistant that answers money and tax questions from a person's own statements.</p>
+          <p><b>Problem and goal.</b> People struggle to see where their money goes and find filing taxes stressful. The goal was an assistant that answers from their own records.</p>
+          <p class="proj-label"><b>Key contributions</b></p>
+          <ul><li><b>Statement reading:</b> reads M-Pesa, bank and payslip statements, including scanned and password-protected PDFs, using OCR.</li><li><b>Answers:</b> answers money questions on WhatsApp, Telegram and the web from the user's own records, using retrieval-based AI.</li><li><b>Tax and billing:</b> a tax engine reads P9 forms to guide KRA filing; subscriptions are billed through Paystack.</li></ul>
           <ul class="chips" aria-label="Tools"><li>Next.js</li><li>Supabase</li><li>OCR</li><li>RAG</li><li>Paystack</li></ul>
         </article>
       </div>
       <div class="more">
         <h3>More projects</h3>
         <div class="more-grid">
-          <div class="mini reveal"><h4>Kenya Climate &amp; Nature Directory</h4><p>Power BI dashboards and AI-assisted research and publishing automations, with human review before anything is published.</p></div>
-          <div class="mini reveal"><h4>Africa Climate &amp; Nature Data Platform (prototype)</h4><p>Sector dashboards and a Kenya county-level map of physical and transition climate risk for small businesses. Next.js, Recharts, Leaflet.</p></div>
-          <div class="mini reveal"><h4>Process automation: Mediscope and Strathmore Centre for Value Investing</h4><p>Mapped how each team really works, designed automations around it and trained the Centre's team to use them.</p></div>
-          <div class="mini reveal"><h4>Course evaluation system: Strathmore</h4><p>Increased student feedback rates and gave staff timely analytics; the 2026 rebuild adds anonymous one-time links and AI summaries of comments. Django, React, PostgreSQL.</p></div>
-          <div class="mini reveal"><h4>Phone-billing system rebuild: Strathmore University ICT</h4><p>Rebuilt the university's phone billing as an Odoo module, synced with call records and HR/ERP data. Python, Odoo, Asterisk.</p></div>
-          <div class="mini reveal"><h4>Penetration test: Harambee SACCO</h4><p>Tested a financial cooperative's systems from an attacker's point of view and set out the fixes.</p></div>
-          <div class="mini reveal"><h4>Breach Alert</h4><p>Opt-in breach monitoring: owners verify an email by code or a domain by DNS record, emails encrypted at rest, passwords checked without ever being sent in full.</p></div>
-          <div class="mini reveal"><h4>Harambee Shop</h4><p>Group buying with shared baskets, a discount ladder, supplier-pack splitting, settlement and payouts. Free Pascal (mORMot2), Next.js, PostgreSQL, Redis, Paystack.</p></div>
-          <div class="mini reveal"><h4>Tumaini Support &amp; Care</h4><p>Healthcare staffing platform with candidate, employer and admin dashboards, verification and audit log. Next.js, Prisma, Playwright.</p></div>
-          <div class="mini reveal"><h4>Strathmore faculty tools</h4><p>Faculty workload management app (Django, React) and admissions data pipelines (Python, Selenium).</p></div>
-          <div class="mini reveal"><h4>Event-streaming pipeline</h4><p>Apache Kafka on a three-broker cluster with Python services in Docker and PostgreSQL.</p></div>
-          <div class="mini reveal"><h4>Data science (WorldQuant University)</h4><p>ARMA air-quality forecasting, GARCH volatility forecasting served via an API, bankruptcy prediction, earthquake damage classification with a bias audit, customer segmentation, A/B testing with ETL, regression price models.</p></div>
+          <div class="mini reveal"><h4>Phone-billing system rebuild (Jan – Feb 2026)</h4><p>rebuilt a university's phone billing as an Odoo module, synced with call records and HR/ERP data. Python · Odoo · Asterisk</p></div>
+          <div class="mini reveal"><h4>Penetration test: Harambee SACCO (2024)</h4><p>tested a financial cooperative's systems from an attacker's point of view and set out the fixes.</p></div>
+          <div class="mini reveal"><h4>Event-streaming pipeline (Apr – Jul 2026)</h4><p>Apache Kafka on a three-broker cluster, Python producer and consumer services in Docker, and PostgreSQL.</p></div>
+          <div class="mini reveal"><h4>Cattle disease image classifier (Feb – Mar 2026)</h4><p>developer on a team project that identifies foot-and-mouth disease, lumpy skin disease and mastitis from photos of cattle. Transfer learning (EfficientNetB0) on 3,921 images reached 91% validation accuracy (macro F1 0.90), served through a Streamlit app in Docker. TensorFlow · Keras · scikit-learn · Streamlit</p></div>
+          <div class="mini reveal"><h4>KCSE 2025 results map (Jan 2025)</h4><p>a county-by-county map of Kenya's top KCSE grades, built from the published results. Python · folium</p></div>
         </div>
       </div>
     </div>
