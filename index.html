@@ -49,6 +49,7 @@
     <a class="brand" href="#top">Wayne Opanja<span>.</span></a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#work">Work</a></li>
+      <li><a href="projects.html">All projects</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -87,7 +88,7 @@
         <li>Federal Ministry of Education, Nigeria</li>
         <li>British International Investment</li>
         <li>Nairobi City County</li>
-        <li>Venture Garden Group</li>
+        <li>Federal Ministry of Industry, Trade &amp; Investment, Nigeria</li>
         <li>Kenya &amp; Tanzania Bankers Associations</li>
       </ul>
     </div>
@@ -99,6 +100,7 @@
         <span class="kicker">Selected work</span>
         <h2>Seven projects: the goal, how we did it, the challenges and what I learned.</h2>
         <p>Most client work is private, so each project is described in plain terms, with the tools I used. I’m happy to walk through any of them on a call.</p>
+        <p><a class="btn btn-ghost btn-sm" href="projects.html">See all projects →</a></p>
       </div>
 
       <div class="cases">
@@ -115,10 +117,10 @@
         <article class="case reveal">
           <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">How an investor uses it</div><div class="flow"><div class="node"><b>Opens their money-transfer or banking app</b></div><div class="arrow"></div><div class="node"><b>Sees vetted African investments they qualify for</b></div><div class="arrow"></div><div class="node hot"><b>Verifies their identity once</b></div><div class="arrow"></div><div class="node"><b>Funds a wallet and invests</b></div><div class="arrow"></div><div class="node guard"><b>Every amount reconciled before it moves</b></div></div></div></div>
           <div class="case-body">
-            <span class="case-meta">Venture Garden Group · ProDG Studios · 2025 – 2026</span>
+            <span class="case-meta">Fintech · Confidential client · 2025 – 2026</span>
             <h3>An investment marketplace that partner apps can plug in</h3>
-            <dl><div><dt>The project</dt><dd>CrossVest, Venture Garden Group’s investment marketplace for people in the diaspora and their partner apps.</dd></div><div><dt>The goal</dt><dd>Let people abroad invest in vetted African opportunities from inside apps they already use, such as money-transfer and banking apps, with trust and compliance built in.</dd></div><div><dt>How we did it</dt><dd>I developed and deployed the frontend, took it through user acceptance testing into production, and kept working on the product into 2026, across research, product design and QA. The product covers investor onboarding with identity checks, the marketplace, wallet funding, a portal for fund managers to list investments, partner dashboards and an admin console.</dd></div><div><dt>The challenges</dt><dd>The original payment provider was removed partway through, so money movement had to work with any future provider and be tested against a stand-in. Business verification was blocked, so we used a manual route. And with investors’ money involved, every amount had to reconcile exactly.</dd></div><div><dt>The outcome</dt><dd>The frontend was delivered, signed off in user acceptance testing and deployed to production, with identity checks live through Smile ID and Sumsub.</dd></div><div><dt>What I learned</dt><dd>In fintech, trust is the product. Getting every amount to add up matters more than any feature, and building so the payment provider can change keeps a project alive when partners change.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>React</li><li>Next.js</li><li>Python</li><li>PostgreSQL</li><li>Clerk</li><li>Sumsub</li><li>Smile ID</li><li>Render</li></ul></div>
+            <dl><div><dt>The project</dt><dd>A cross-border investment marketplace for people in the diaspora, built for a confidential fintech client.</dd></div><div><dt>The goal</dt><dd>Let people abroad invest in vetted African opportunities from inside apps they already use, such as money-transfer and banking apps, with trust and compliance built in.</dd></div><div><dt>How we did it</dt><dd>I developed and deployed the frontend, took it through user acceptance testing into production, and kept working on the product into 2026, across research, product design and QA. The product covers investor onboarding with identity checks, the marketplace, wallet funding, a portal for fund managers to list investments, partner dashboards and an admin console.</dd></div><div><dt>The challenges</dt><dd>A key provider changed partway through, so money movement had to work with any provider and be tested against a stand-in. Business verification was blocked, so we used a manual route. And with investors’ money involved, every amount had to reconcile exactly.</dd></div><div><dt>The outcome</dt><dd>The frontend was delivered, signed off in user acceptance testing and deployed to production, with identity checks live.</dd></div><div><dt>What I learned</dt><dd>In fintech, trust is the product. Getting every amount to add up matters more than any feature, and building so the payment provider can change keeps a project alive when partners change.</dd></div></dl>
+            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>React</li><li>Next.js</li><li>Python</li><li>PostgreSQL</li><li>Identity verification (KYC)</li></ul></div>
             <div class="case-links"><span class="private">Client product, details confidential. Walkthrough on request.</span></div>
           </div>
         </article>
@@ -128,7 +130,7 @@
             <span class="case-meta">PropFlow · Pneuma Labs · 2026</span>
             <h3>One system for landlords to run rent, tenants and repairs</h3>
             <dl><div><dt>The project</dt><dd>Property-management software for landlords and managing agents in East Africa.</dd></div><div><dt>The goal</dt><dd>Replace the spreadsheets, WhatsApp threads and paper files landlords juggle with one system for rent, tenants and repairs.</dd></div><div><dt>How we did it</dt><dd>I designed and built the whole platform: rent and billing, arrears, deposits, leases signed online, repairs with contractor approvals and online payments. Tenants report problems on WhatsApp, and an emergency triggers a phone call. AI reads tenant messages and suggests what to do, but the system checks each suggestion against the rules before acting. I also travelled to Uganda and Rwanda to meet partners, including the leadership teams of Keystone Technologies and Unispace.</dd></div><div><dt>The challenges</dt><dd>Tenant messages are unpredictable, and the system handles real money and legal documents. Every AI suggestion had to be safe before it could reach a landlord or tenant.</dd></div><div><dt>The outcome</dt><dd>A production-ready platform with online payments, automated testing, nightly backups and a written recovery plan. In Rwanda I trained five CEOs, property owners and their CTOs to use it, and I maintain it in production.</dd></div><div><dt>What I learned</dt><dd>AI is most useful when it suggests and clear rules decide. That is what makes it safe to put near tenants and landlords’ money.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>Prisma</li><li>PostgreSQL</li><li>Twilio</li><li>WhatsApp</li><li>Paystack</li><li>Docker</li><li>Sentry</li></ul></div>
+            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>Prisma</li><li>PostgreSQL</li><li>Twilio (voice, images)</li><li>WhatsApp</li><li>Paystack</li><li>Docker</li><li>Sentry</li></ul></div>
             <div class="case-links"><span class="private">Client product, private. Demo on request.</span></div>
           </div>
         </article>
@@ -178,9 +180,9 @@
         <h3>More work</h3>
         <div class="more-grid">
           <div class="mini reveal">
-            <span class="tag">Data collection · WhatsApp</span>
+            <span class="tag">Data collection · 3,000+ users</span>
             <h4>NGAO</h4>
-            <p>A WhatsApp platform that replaces paper forms for field reporting in Kenya. People answer in English or Kiswahili, misspellings are corrected, photo locations are checked, and every submission is kept as a permanent record. I was the full-stack developer: I built the engines that run the conversations and connected them to the admin dashboard.</p>
+            <p>A WhatsApp platform that replaces paper forms for field reporting in Kenya. People answer in English or Kiswahili, by text, photo or voice, misspellings are corrected, photo locations are checked, and every submission is kept as a permanent record. I was the full-stack developer: I built the engines that run the conversations and connected them to the admin dashboard. It is rolled out and has more than 3,000 users.</p>
           </div>
           <div class="mini reveal">
             <span class="tag">Climate data · Prototype</span>
@@ -225,7 +227,7 @@
       </div>
       <div class="about-text reveal">
         <p>I like the part of a project where nobody is sure yet what to build.</p>
-        <p>I'm a software and AI engineer based in Nairobi. At Pneuma Labs I'm the lead software engineer on AI and automation systems for clients in the UK, Kenya, Uganda, Rwanda, Burundi and the DRC. Before that I worked as a senior engineer at ProDG Studios on national platforms for Nigerian government ministries and CrossVest, an investment marketplace for people in the diaspora.</p>
+        <p>I'm a software and AI engineer based in Nairobi. At Pneuma Labs I'm the lead software engineer on AI and automation systems for clients in the UK, Kenya, Uganda, Rwanda, Burundi and the DRC. Before that I worked as a senior engineer at ProDG Studios on national platforms for Nigerian government ministries, a WhatsApp data-collection platform with more than 3,000 users, and a cross-border investment marketplace.</p>
         <p>My work usually starts with research and process mapping and ends with a system in production. In between I do the UX, the frontend and backend, the data pipelines, the AI integration, and the QA and user-acceptance testing. I care about getting the boring parts right: data that adds up, permissions that hold, and AI that is checked before it acts.</p>
         <p>I also have a background in data science and security. I'm a partner at Climate Shapers Africa, where I work on climate-risk data for financial institutions, and I hold the EC-Council CHFI certification. I'm finishing a Business IT degree at Strathmore University.</p>
         <div class="facts">
@@ -257,51 +259,45 @@
             </ul>
           </div>
         </li>
-        <li class="role reveal">
-          <time>2026 – Present</time>
-          <div>
-            <h3>Consultant, Climate &amp; Nature Toolkit · <span class="org">British International Investment</span></h3>
-            <p>Built the interactive platform for BII's climate and nature risk-assessment and disclosure toolkit for financial institutions.</p>
-          </div>
-        </li>
+        
         <li class="role reveal">
           <time>2025 – 2026</time>
           <div>
             <h3>Senior Software Engineer · <span class="org">ProDG Studios</span> (UK, remote)</h3>
             <ul>
               <li><b>RICC, Federal Ministry of Education, Nigeria:</b> frontend and UX lead on the national innovation portal, built to collect data offline in remote areas.</li>
-              <li><b>Trademark Registry, Federal Ministry of Industry, Trade and Investment, Nigeria:</b> digital registration and administration workflows.</li>
-              <li><b>CrossVest, Venture Garden Group:</b> developed and deployed the frontend of an investment marketplace that partner apps can embed, taking it through user acceptance testing into production, with identity checks through Smile ID and Sumsub.</li>
-              <li><b>NGAO:</b> full-stack developer on a WhatsApp data-collection platform for field reporting in Kenya; built the engines and orchestrators and connected backend and frontend.</li>
+              <li><b>Trademark Registry, Federal Ministry of Industry, Trade and Investment, Nigeria:</b> upgraded the ministry's existing system, rebuilding the registration and administration workflows.</li>
+              <li><b>Cross-border investment platform (confidential fintech client):</b> developed and deployed the frontend of an investment marketplace that partner apps can embed, taking it through user acceptance testing into production, with identity verification.</li>
+              <li><b>NGAO:</b> full-stack developer on a WhatsApp data-collection platform for field reporting in Kenya; built the engines and orchestrators and connected backend and frontend. Rolled out, 3,000+ users.</li>
             </ul>
           </div>
         </li>
+        
+        
+        
+        
+      </ol>
+      <h3 class="kicker" style="display:block;margin:48px 0 18px">Client and partner engagements</h3>
+      <ol class="timeline">
         <li class="role reveal">
-          <time>2025 – Present</time>
+          <time>Engagement</time>
           <div>
-            <h3>Data Scientist → Technical Analyst → Partner · <span class="org">Climate Shapers Africa</span></h3>
-            <p>Climate data pipelines, analytical models and AI automations. Climate-stress exposure analytics for the Kenya and Tanzania Bankers Associations, the Africa Climate &amp; Nature Data Platform, and Power BI dashboards for the Kenya Climate &amp; Nature Directory. Became a partner in 2026.</p>
+            <h3>Consultant, Climate &amp; Nature Toolkit · <span class="org">British International Investment</span></h3>
+            <p>Built the interactive platform for BII's climate and nature risk-assessment and disclosure toolkit for financial institutions.</p>
           </div>
         </li>
         <li class="role reveal">
-          <time>2025 – 2026</time>
+          <time>Engagement</time>
           <div>
-            <h3>Software Developer Intern · <span class="org">Strathmore University ICT</span></h3>
-            <p>Rebuilt the university's phone-billing system on Odoo, with call-record and HR/ERP sync. This was the internship my degree requires.</p>
+            <h3>Technical Analyst and Partner · <span class="org">Climate Shapers Africa</span></h3>
+            <p>Climate data pipelines, analytical models and AI automations. Climate-stress exposure analytics for the Kenya and Tanzania Bankers Associations, the Africa Climate &amp; Nature Data Platform, and Power BI dashboards for the Kenya Climate &amp; Nature Directory. Joined as a data scientist, promoted to technical analyst, now a partner.</p>
           </div>
         </li>
         <li class="role reveal">
-          <time>2024</time>
+          <time>Engagement</time>
           <div>
             <h3>Penetration Testing Consultant · <span class="org">Harambee SACCO</span></h3>
-            <p>Attacker-perspective testing of a financial cooperative's systems, with findings written up for remediation.</p>
-          </div>
-        </li>
-        <li class="role reveal">
-          <time>2023 – 2025</time>
-          <div>
-            <h3>Student Assistant, Developer · <span class="org">Strathmore Institute of Mathematical Sciences</span></h3>
-            <p>Built a course evaluation system (Django, React, PostgreSQL) that raised feedback rates by 75%, a faculty workload app, and Selenium data pipelines for admissions.</p>
+            <p>Attacker-perspective testing of a financial cooperative's systems, and set out the fixes.</p>
           </div>
         </li>
       </ol>
@@ -337,6 +333,8 @@
           <ul>
             <li>Bachelor of Business Information Technology, Strathmore University (2024 – 2027)</li>
             <li>Diploma in Business Information Technology, Strathmore University (2024)</li>
+            <li>Student Assistant (Developer), Strathmore Institute of Mathematical Sciences (2023 – 2025): course evaluation system that raised feedback rates by 75%, a faculty workload app and admissions data pipelines</li>
+            <li>Software Developer Intern, Strathmore University ICT (2025 – 2026, degree internship): rebuilt the phone-billing system on Odoo</li>
             <li>English and Swahili, fluent; German, beginner</li>
           </ul>
         </div>
