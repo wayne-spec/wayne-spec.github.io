@@ -40,6 +40,26 @@
   "sameAs": ["https://www.linkedin.com/in/waynewilliamsopanja", "https://github.com/wayne-spec"]
 }
 </script>
+<style>
+  .hero-shots{position:relative;margin-top:44px;height:430px}
+  .hero-shots .shot{position:absolute;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.28);background:var(--bg-2)}
+  .hero-shots .shot .bar{display:flex;gap:6px;padding:8px 11px;border-bottom:1px solid var(--line)}
+  .hero-shots .shot .bar i{width:8px;height:8px;border-radius:50%;background:var(--line);display:block}
+  .hero-shots img{display:block;width:100%;height:auto}
+  .hero-shots .a{left:0;top:40px;width:52%;z-index:1}.hero-shots .b{left:30%;top:0;width:52%;z-index:2}
+  .hero-shots .c{right:0;top:60px;width:150px;border-radius:24px;border:7px solid #111;z-index:3}
+  .hero-shots .cap{position:absolute;left:0;bottom:-6px;font-size:.85rem;color:var(--muted)}
+  .refs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:24px}
+  .ref{border:1px solid var(--line);border-radius:14px;padding:22px}.ref b{display:block;font-size:1.05rem}.ref span{color:var(--muted)}
+  @media (max-width:760px){.hero-shots{height:250px}.hero-shots .a{width:70%;top:30px}.hero-shots .b{left:22%;width:70%}.hero-shots .c{width:90px;border-width:5px}.refs{grid-template-columns:1fr}}
+  .offer{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}
+  .offer .idea{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--bg-2)}
+  .offer .n{font-family:'Instrument Serif',serif;font-size:2.4rem;line-height:1;color:var(--accent)}
+  .offer h3{margin:10px 0 8px;font-size:1.15rem}.offer p{margin:0 0 10px}.offer .built{font-size:.92rem;color:var(--muted)}
+  .lane{display:grid;gap:10px;margin-top:22px}.lane div{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg-2)}
+  .lane b{display:block}.lane span{color:var(--muted);font-size:.93rem}
+  @media (max-width:900px){.offer{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -48,6 +68,7 @@
   <nav class="wrap nav" aria-label="Main">
     <a class="brand" href="#top">Wayne Opanja<span>.</span></a>
     <ul class="nav-links" id="nav-links">
+      <li><a href="#build">What I build</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#how">How I work</a></li>
       <li><a href="projects.html">All projects</a></li>
@@ -79,6 +100,12 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn btn-ghost" href="https://github.com/wayne-spec" target="_blank" rel="noopener">GitHub ↗</a>
         <a class="btn btn-ghost" href="assets/Wayne-Williams-Opanja-CV.pdf" download>Download CV</a>
+      </div>
+      <div class="hero-shots">
+        <a class="shot a" href="https://kenyaclimatedirectory.org" target="_blank" rel="noopener" aria-label="Kenya Climate and Nature Directory (opens the live site)"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/img/shots/kcnd-desk.png" width="1440" height="900" alt="The Kenya Climate and Nature Directory, whose research pipeline I built"></a>
+        <a class="shot b" href="https://ricc.education.gov.ng/" target="_blank" rel="noopener" aria-label="RICC national platform (opens the live site)"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/img/shots/ricc-desk.png" width="1440" height="900" alt="RICC, the national innovation platform for Nigeria's Federal Ministry of Education"></a>
+        <a class="shot c" href="https://ricc.education.gov.ng/" target="_blank" rel="noopener" aria-label="RICC on a phone (opens the live site)"><img src="assets/img/shots/ricc-phone.png" width="780" height="1688" alt="RICC on a phone"></a>
+        <span class="cap">Live in production: the Kenya Climate &amp; Nature Directory and Nigeria's RICC platform. Click to open them.</span>
       </div>
     </div>
   </section>
@@ -113,6 +140,26 @@
   </section>
 
 
+  <section class="section" id="build" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">What I build</span>
+        <h2>Three things I'm often brought in to build.</h2>
+        <p>Each one is something I have already delivered and run in production.</p>
+      </div>
+      <div class="offer">
+        <div class="idea reveal"><div class="n">01</div><h3>Video and content pipelines a small team can run alone</h3><p>Material goes in; reviewed videos, posts and downloads come out on a fixed rhythm. AI does the heavy lifting, and nothing is published until a person approves it.</p><p class="built">Delivered: a studio that produces a narrated 60–90 second video and a post every morning, research carousels three times a week, and a weekly bulletin and newsletter.</p></div>
+        <div class="idea reveal"><div class="n">02</div><h3>Learning and education platforms</h3><p>Clear step-by-step paths, progress people can see, checks along the way, and records that hold up when someone needs to verify them.</p><p class="built">Delivered: RICC, the live national platform for Nigeria's Federal Ministry of Education; a course evaluation system at Strathmore; guided step-by-step workbenches for British International Investment.</p></div>
+        <div class="idea reveal"><div class="n">03</div><h3>Services that reach people where they are</h3><p>Apps that keep working on weak connections, and services on WhatsApp for people who won't install another app, in the languages they actually use.</p><p class="built">Delivered: NGAO on WhatsApp in English and Kiswahili, 3,000+ users; RICC's offline data collection for field agents.</p></div>
+      </div>
+      <div class="lane reveal" aria-label="A day in the content studio I built">
+        <div><b>Every morning: a news post and a 60–90 second narrated video</b><span>Voice-over, music bed and a poster frame, checked against the studio's own frame rules before it renders.</span></div>
+        <div><b>Three times a week: a research carousel</b><span>5–7 slides from a real paper; every number on a chart must appear in the paper; cover photos are checked for quality before use.</span></div>
+        <div><b>One calendar: Idea → Draft → Review → Scheduled → Published</b><span>Editors review, edit, re-render and download in one place. Nothing is posted automatically.</span></div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="work">
     <div class="wrap">
       <div class="section-head">
@@ -128,7 +175,7 @@
           <div class="case-body">
             <span class="case-meta">Kenya Climate &amp; Nature Directory · Sole engineer · 2026</span>
             <h3>A studio that turns research into explainer videos and posts</h3>
-            <dl><div><dt>The problem</dt><dd>The Kenya Climate &amp; Nature Directory holds thousands of research papers, but research only helps people once it reaches them in a form they can take in.</dd></div><div><dt>The goal</dt><dd>Let one editor turn a paper into ready-to-share content (posts, images and a short narrated video) without a designer or a video editor.</dd></div><div><dt>My role</dt><dd>Sole engineer: I built the directory's research pipeline and its studios, from the database to the editor's dashboard.</dd></div><div><dt>How I built it</dt><dd>The editor searches the whole library and picks a paper. AI drafts posts from it in the tone the editor chooses. The studio then renders carousel images, a short explainer video with a synthetic voice-over, and a download bundle. Rendering runs as a queued background job, and the files are stored in the cloud. If one AI provider fails, it switches to another, and a test checks that the models it depends on are still available.</dd></div><div><dt>The challenges</dt><dd>A free AI provider closed and a model was retired without warning, which took the studio down. I added automatic fallback between providers and a live health check, so the next change shows up before an editor hits it.</dd></div><div><dt>The outcome</dt><dd>Part of the directory's production system, alongside a nightly research pipeline that searches six sources (2,774 records migrated), a News Studio and a grants tracker. Every item is approved by a person before it is published.</dd></div><div><dt>What I learned</dt><dd>Video and plain language are what carry information to people. The technology's job is to make that fast for the person creating it and safe for the person receiving it.</dd></div></dl>
+            <dl><div><dt>The problem</dt><dd>The Kenya Climate &amp; Nature Directory holds thousands of research papers, but research only helps people once it reaches them in a form they can take in.</dd></div><div><dt>The goal</dt><dd>Let one editor turn a paper into ready-to-share content (posts, images and a short narrated video) without a designer or a video editor.</dd></div><div><dt>My role</dt><dd>Sole engineer: I built the directory's research pipeline and its studios, from the database to the editor's dashboard.</dd></div><div><dt>How I built it</dt><dd>The editor searches the whole library and picks a paper. AI drafts posts from it in the tone the editor chooses. The studio then renders carousel images, a short explainer video with a synthetic voice-over, and a download bundle. Rendering runs as a queued background job, and the files are stored in the cloud. If one AI provider fails, it switches to another, and a test checks that the models it depends on are still available.</dd></div><div><dt>The challenges</dt><dd>A free AI provider closed and a model was retired without warning, which took the studio down. I added automatic fallback between providers and a live health check, so the next change shows up before an editor hits it.</dd></div><div><dt>The outcome</dt><dd>It now also runs the Climate Shapers Africa studio, on a fixed weekly rhythm: a news post with a 60–90 second narrated video every morning, research carousels three times a week, and a weekly bulletin and newsletter, all on one editorial calendar where nothing is posted automatically. It is part of the directory's production system, alongside a nightly research pipeline that searches six sources (2,774 records migrated), a News Studio and a grants tracker. Every item is approved by a person before it is published.</dd></div><div><dt>What I learned</dt><dd>Video and plain language are what carry information to people. The technology's job is to make that fast for the person creating it and safe for the person receiving it.</dd></div></dl>
             <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>SvelteKit</li><li>Python</li><li>Supabase</li><li>Remotion (video)</li><li>Piper (voice)</li><li>Cloudflare R2</li><li>GitHub Actions</li><li>LLMs with fallback</li></ul></div>
             <div class="case-links"><span class="private">Production system. Walkthrough on request.</span></div>
           </div>
@@ -386,6 +433,20 @@
             <li>English and Swahili, fluent; German, beginner</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="refs" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">References</span>
+        <h2>People I've delivered for.</h2>
+        <p>Contact details on request.</p>
+      </div>
+      <div class="refs">
+        <div class="ref reveal"><b>Reuben Muhindi Wambui</b><span>Executive Director, Climate Shapers Africa, and founder of the Kenya Climate &amp; Nature Directory. I built the directory's research pipeline and the Climate Shapers studio.</span></div>
+        <div class="ref reveal"><b>Habeeb Bidemi Aremu</b><span>CEO, Hatixa Global Solutions. The Trademark Registry project for Nigeria's Federal Ministry of Industry, Trade and Investment.</span></div>
       </div>
     </div>
   </section>
