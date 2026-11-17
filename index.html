@@ -1,13 +1,12 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Wayne Williams Opanja · Software Developer</title>
 <meta name="description" content="Full-stack software developer in Nairobi. I build learning, video, WhatsApp and AI products for health, education and public services, project by project.">
 <link rel="canonical" href="https://wayne-spec.github.io/">
 <meta name="theme-color" content="#0c0e0d">
-
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wayne-spec.github.io/">
 <meta property="og:title" content="Wayne Williams Opanja · Software Developer">
@@ -17,14 +16,13 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Wayne Williams Opanja, Software Developer">
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/desktop/desktop.css">
 <script>
-  document.documentElement.classList.remove('no-js');
   try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
 <script type="application/ld+json">
@@ -40,471 +38,55 @@
   "sameAs": ["https://www.linkedin.com/in/waynewilliamsopanja", "https://github.com/wayne-spec"]
 }
 </script>
-<style>
-  .hero-shots{position:relative;margin-top:44px;height:430px}
-  .hero-shots .shot{position:absolute;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.28);background:var(--bg-2)}
-  .hero-shots .shot .bar{display:flex;gap:6px;padding:8px 11px;border-bottom:1px solid var(--line)}
-  .hero-shots .shot .bar i{width:8px;height:8px;border-radius:50%;background:var(--line);display:block}
-  .hero-shots img{display:block;width:100%;height:auto}
-  .hero-shots .a{left:0;top:40px;width:52%;z-index:1}.hero-shots .b{left:30%;top:0;width:52%;z-index:2}
-  .hero-shots .c{right:0;top:60px;width:150px;border-radius:24px;border:7px solid #111;z-index:3}
-  .hero-shots .cap{position:absolute;left:0;bottom:-6px;font-size:.85rem;color:var(--muted)}
-  .refs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:24px}
-  .ref{border:1px solid var(--line);border-radius:14px;padding:22px}.ref b{display:block;font-size:1.05rem}.ref span{color:var(--muted)}
-  @media (max-width:760px){.hero-shots{height:250px}.hero-shots .a{width:70%;top:30px}.hero-shots .b{left:22%;width:70%}.hero-shots .c{width:90px;border-width:5px}.refs{grid-template-columns:1fr}}
-  .offer{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}
-  .offer .idea{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--bg-2)}
-  .offer .n{font-family:'Instrument Serif',serif;font-size:2.4rem;line-height:1;color:var(--accent)}
-  .offer h3{margin:10px 0 8px;font-size:1.15rem}.offer p{margin:0 0 10px}.offer .built{font-size:.92rem;color:var(--muted)}
-  .lane{display:grid;gap:10px;margin-top:22px}.lane div{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg-2)}
-  .lane b{display:block}.lane span{color:var(--muted);font-size:.93rem}
-  @media (max-width:900px){.offer{grid-template-columns:1fr}}
-</style>
 </head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
+<body class="os">
+<a class="skip" href="classic.html">Skip to the classic (non-desktop) portfolio</a>
 
-<header class="site-header">
-  <nav class="wrap nav" aria-label="Main">
-    <a class="brand" href="#top">Wayne Opanja<span>.</span></a>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#build">What I build</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#how">How I work</a></li>
-      <li><a href="projects.html">All projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="https://github.com/wayne-spec" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="#contact">Contact</a></li>
+<div id="boot" aria-hidden="true">
+  <div class="boot-mark">W</div>
+  <div class="boot-bar"><i></i></div>
+</div>
+
+<header class="menubar" id="menubar">
+  <div class="mb-left">
+    <button class="mb-logo" id="mb-logo" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="mb-menu" title="Menu">W</button>
+    <ul class="mb-menu" id="mb-menu" role="menu" hidden>
+      <li role="none"><button role="menuitem" data-open="welcome">About Wayne</button></li>
+      <li role="none"><button role="menuitem" data-open="finder">My work</button></li>
+      <li role="none"><a role="menuitem" href="assets/Wayne-Williams-Opanja-CV.pdf" download>Download CV</a></li>
+      <li role="none" class="sep"></li>
+      <li role="none"><a role="menuitem" href="classic.html">Classic view</a></li>
+      <li role="none"><a role="menuitem" href="mailto:waynewilliams2028@gmail.com">Email me</a></li>
     </ul>
-    <div class="nav-actions">
-      <a class="btn btn-primary btn-sm btn-cv" href="assets/Wayne-Williams-Opanja-CV.pdf" download>Download CV</a>
-      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>
-      </button>
-      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-    </div>
-  </nav>
+    <strong class="mb-app" id="mb-app">Wayne Opanja</strong>
+    <nav class="mb-links" aria-label="Quick links">
+      <button type="button" data-open="finder">Work</button>
+      <button type="button" data-open="studio">What I build</button>
+      <button type="button" data-open="notes">How I work</button>
+      <button type="button" data-open="contacts">Contact</button>
+      <a href="classic.html">Classic view</a>
+    </nav>
+  </div>
+  <div class="mb-right">
+    <button class="mb-icon" id="theme-toggle" type="button" aria-label="Switch light or dark mode" title="Light / dark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>
+    </button>
+    <span class="mb-status">Available for projects</span>
+    <time class="mb-clock" id="mb-clock"></time>
+  </div>
 </header>
 
-<main id="main">
-  <section class="hero" id="top">
-    <div class="wrap">
-      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Software Developer · Available for project-based consultancy</span>
-      <h1>I build software that works for <em>the people who rely on it.</em></h1>
-      <p class="lede">I'm Wayne, a <strong>full-stack software developer</strong> in Nairobi, shipping production software since 2023. I build education and video tools, WhatsApp-first services and AI products for health, education and public services, and I deliver them <strong>project by project</strong>: a clear scope, working software every week, tested before it goes live, and support after launch.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="#work">See my work
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="https://github.com/wayne-spec" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn btn-ghost" href="assets/Wayne-Williams-Opanja-CV.pdf" download>Download CV</a>
-      </div>
-      <div class="hero-shots">
-        <a class="shot a" href="https://kenyaclimatedirectory.org" target="_blank" rel="noopener" aria-label="Kenya Climate and Nature Directory (opens the live site)"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/img/shots/kcnd-desk.png" width="1440" height="900" alt="The Kenya Climate and Nature Directory, whose research pipeline I built"></a>
-        <a class="shot b" href="https://ricc.education.gov.ng/" target="_blank" rel="noopener" aria-label="RICC national platform (opens the live site)"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="assets/img/shots/ricc-desk.png" width="1440" height="900" alt="RICC, the national innovation platform for Nigeria's Federal Ministry of Education"></a>
-        <a class="shot c" href="https://ricc.education.gov.ng/" target="_blank" rel="noopener" aria-label="RICC on a phone (opens the live site)"><img src="assets/img/shots/ricc-phone.png" width="780" height="1688" alt="RICC on a phone"></a>
-        <span class="cap">Live in production: the Kenya Climate &amp; Nature Directory and Nigeria's RICC platform. Click to open them.</span>
-      </div>
-    </div>
-  </section>
-
-  <div class="proof" aria-label="Organisations I have delivered work for">
-    <div class="wrap">
-      <span class="proof-label">Work delivered for</span>
-      <ul>
-        <li>Federal Ministry of Education, Nigeria</li>
-        <li>British International Investment</li>
-        <li>Nairobi City County</li>
-        <li>Federal Ministry of Industry, Trade &amp; Investment, Nigeria</li>
-        <li>Kenya Bankers Association</li>
-      </ul>
-    </div>
-  </div>
-
-  <section class="section" id="impact">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">Track record</span>
-        <h2>Software in production, for clients in eight countries.</h2>
-        <p>From national platforms for government ministries to tools a single editor or a small team relies on every day.</p>
-      </div>
-      <div class="ship">
-        <div class="stat reveal accent"><strong>#1</strong><span>for delivery on my ProDG Studios team: 297 issues closed at a 90.5% completion rate</span></div>
-        <div class="stat reveal"><strong>8</strong><span>countries with clients: the UK, US, Nigeria, Kenya, Uganda, Rwanda, Burundi and the DRC</span></div>
-        <div class="stat reveal"><strong>3,000+</strong><span>users on NGAO after rollout</span></div>
-        <div class="stat reveal"><strong>17</strong><span>products and platforms shipped or prototyped since 2023</span></div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="section" id="build" style="padding-top: 0;">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">What I build</span>
-        <h2>Three things I'm often brought in to build.</h2>
-        <p>Each one is something I have already delivered and run in production.</p>
-      </div>
-      <div class="offer">
-        <div class="idea reveal"><div class="n">01</div><h3>Video and content pipelines a small team can run alone</h3><p>Material goes in; reviewed videos, posts and downloads come out on a fixed rhythm. AI does the heavy lifting, and nothing is published until a person approves it.</p><p class="built">Delivered: a studio that produces a narrated 60–90 second video and a post every morning, research carousels three times a week, and a weekly bulletin and newsletter.</p></div>
-        <div class="idea reveal"><div class="n">02</div><h3>Learning and education platforms</h3><p>Clear step-by-step paths, progress people can see, checks along the way, and records that hold up when someone needs to verify them.</p><p class="built">Delivered: RICC, the live national platform for Nigeria's Federal Ministry of Education; a course evaluation system at Strathmore; guided step-by-step workbenches for British International Investment.</p></div>
-        <div class="idea reveal"><div class="n">03</div><h3>Services that reach people where they are</h3><p>Apps that keep working on weak connections, and services on WhatsApp for people who won't install another app, in the languages they actually use.</p><p class="built">Delivered: NGAO on WhatsApp in English and Kiswahili, 3,000+ users; RICC's offline data collection for field agents.</p></div>
-      </div>
-      <div class="lane reveal" aria-label="A day in the content studio I built">
-        <div><b>Every morning: a news post and a 60–90 second narrated video</b><span>Voice-over, music bed and a poster frame, checked against the studio's own frame rules before it renders.</span></div>
-        <div><b>Three times a week: a research carousel</b><span>5–7 slides from a real paper; every number on a chart must appear in the paper; cover photos are checked for quality before use.</span></div>
-        <div><b>One calendar: Idea → Draft → Review → Scheduled → Published</b><span>Editors review, edit, re-render and download in one place. Nothing is posted automatically.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="work">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">Selected work</span>
-        <h2>Eight products I built or helped build, from prototype to production.</h2>
-        <p>Each one shows the problem, my role, how I built it and what happened next. Most client code is private, so I describe it in plain terms and I’m happy to walk through any of it on a call. My public repositories are on <a href="https://github.com/wayne-spec" target="_blank" rel="noopener">GitHub</a>.</p>
-        <p><a class="btn btn-ghost btn-sm" href="projects.html">See all projects →</a></p>
-      </div>
-
-      <div class="cases">
-        <article class="case reveal">
-          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">From a research paper to a post</div><div class="flow"><div class="node"><b>Editor picks a paper from the library</b></div><div class="arrow"></div><div class="node"><b>AI drafts posts in the chosen tone</b></div><div class="arrow"></div><div class="split"><div class="node"><b>Carousel images</b></div><div class="node hot"><b>Narrated explainer video</b></div></div><div class="arrow"></div><div class="node guard"><b>Nothing goes out until the editor approves</b></div></div></div></div>
-          <div class="case-body">
-            <span class="case-meta">Kenya Climate &amp; Nature Directory · Sole engineer · 2026</span>
-            <h3>A studio that turns research into explainer videos and posts</h3>
-            <dl><div><dt>The problem</dt><dd>The Kenya Climate &amp; Nature Directory holds thousands of research papers, but research only helps people once it reaches them in a form they can take in.</dd></div><div><dt>The goal</dt><dd>Let one editor turn a paper into ready-to-share content (posts, images and a short narrated video) without a designer or a video editor.</dd></div><div><dt>My role</dt><dd>Sole engineer: I built the directory's research pipeline and its studios, from the database to the editor's dashboard.</dd></div><div><dt>How I built it</dt><dd>The editor searches the whole library and picks a paper. AI drafts posts from it in the tone the editor chooses. The studio then renders carousel images, a short explainer video with a synthetic voice-over, and a download bundle. Rendering runs as a queued background job, and the files are stored in the cloud. If one AI provider fails, it switches to another, and a test checks that the models it depends on are still available.</dd></div><div><dt>The challenges</dt><dd>A free AI provider closed and a model was retired without warning, which took the studio down. I added automatic fallback between providers and a live health check, so the next change shows up before an editor hits it.</dd></div><div><dt>The outcome</dt><dd>It now also runs the Climate Shapers Africa studio, on a fixed weekly rhythm: a news post with a 60–90 second narrated video every morning, research carousels three times a week, and a weekly bulletin and newsletter, all on one editorial calendar where nothing is posted automatically. It is part of the directory's production system, alongside a nightly research pipeline that searches six sources (2,774 records migrated), a News Studio and a grants tracker. Every item is approved by a person before it is published.</dd></div><div><dt>What I learned</dt><dd>Video and plain language are what carry information to people. The technology's job is to make that fast for the person creating it and safe for the person receiving it.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>SvelteKit</li><li>Python</li><li>Supabase</li><li>Remotion (video)</li><li>Piper (voice)</li><li>Cloudflare R2</li><li>GitHub Actions</li><li>LLMs with fallback</li></ul></div>
-            <div class="case-links"><span class="private">Production system. Walkthrough on request.</span></div>
-          </div>
-        </article>
-        <article class="case reveal">
-          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">A guided path for a risk team</div><div class="flow"><div class="node"><b>Screen a client for climate risk</b></div><div class="arrow"></div><div class="node"><b>Assess the institution’s readiness</b></div><div class="arrow"></div><div class="node hot"><b>Measure emissions from loans and investments</b></div><div class="arrow"></div><div class="node"><b>Stress-test the portfolio</b></div><div class="arrow"></div><div class="node"><b>Export a complete record (PDF, Excel, Word)</b></div></div></div></div>
-          <div class="case-body">
-            <span class="case-meta">British International Investment · Prototype · 2026</span>
-            <h3>Turning a long technical framework into a guided, step-by-step tool</h3>
-            <dl><div><dt>The problem</dt><dd>A digital version of British International Investment’s climate and nature risk toolkit for financial institutions.</dd></div><div><dt>The goal</dt><dd>Turn guidance that lived in PDFs and spreadsheets into tools that banks and investors can use in the middle of a real lending or investment decision.</dd></div><div><dt>My role</dt><dd>Product lead and sole engineer: turned the framework into a product plan, then designed and built the prototype.</dd></div><div><dt>How we shipped it</dt><dd>I broke the toolkit into modules and built step-by-step workbenches for each task: screening a client for climate risk, measuring the emissions linked to loans and investments, and stress-testing a portfolio. Each piece of work links institutions, clients and projects, and exports cleanly.</dd></div><div><dt>The challenges</dt><dd>The source guidance is long and technical, and the people using the tool are finance staff, not climate specialists. It had to stay faithful to the method while feeling simple.</dd></div><div><dt>The outcome</dt><dd>A working prototype covering all 23 modules of the toolkit, with guided journeys, calculators, linked records and exports. It is now in proposal and review.</dd></div><div><dt>What I learned</dt><dd>Complex frameworks get used when they are broken into small guided steps. Most of the work is understanding the method well enough to make it simple.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li></ul></div>
-            <div class="case-links"><span class="private">Client platform, private.</span></div>
-          </div>
-        </article>
-        <article class="case reveal">
-          <div class="case-visual"><img src="assets/img/ricc.webp" width="1200" height="684" loading="lazy" alt="Home page of the RICC National Innovation Capacity Assessment platform for Nigeria’s Federal Ministry of Education"></div>
-          <div class="case-body">
-            <span class="case-meta">Federal Ministry of Education, Nigeria · ProDG Studios · 2026</span>
-            <h3>A national platform to move research into the market</h3>
-            <dl><div><dt>The problem</dt><dd>RICC, a national platform for Nigeria’s Research, Innovation and Commercialisation Council.</dd></div><div><dt>The goal</dt><dd>Connect universities, industry, innovators and regulators so more research turns into real products and services.</dd></div><div><dt>My role</dt><dd>Frontend and UX lead at ProDG Studios: stakeholder research, user journeys for every group, QA and rollout readiness.</dd></div><div><dt>How we shipped it</dt><dd>I led the frontend and user experience. Before designing anything, I researched where collaboration was breaking down, then built the user journeys around those bottlenecks. The portal works offline: field agents fill in questionnaires where there is no internet, and their answers are sent once they are back online. I built the landing page, the analytics dashboards that show where innovations stall on the way to market, the evidence-verification panel and the consent controls, and I ran end-to-end testing before the national rollout.</dd></div><div><dt>The challenges</dt><dd>Many groups with different needs had to be served by one platform: universities, industry, innovators, regulators and funders. Much of the data had to be collected in places with weak or no internet, and the same innovation was often reported more than once.</dd></div><div><dt>The outcome</dt><dd>A live national platform for the Ministry of Education and TETFund, with questionnaires for every type of stakeholder, ready for a national rollout.</dd></div><div><dt>What I learned</dt><dd>Understand the problem before you build. Putting a broken paper process online only gives you a faster broken process.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>User research</li><li>UX design</li><li>Next.js</li><li>React</li><li>TypeScript</li><li>Offline web app</li><li>QA</li></ul></div>
-            <div class="case-links"><a href="https://ricc.education.gov.ng/" target="_blank" rel="noopener">Visit ricc.education.gov.ng ↗</a></div>
-          </div>
-        </article>
-        <article class="case reveal">
-          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">How it works</div><div class="flow"><div class="node"><b>Monthly revenue reports come in</b></div><div class="arrow"></div><div class="node"><b>Cleaned and stored in one database</b></div><div class="arrow"></div><div class="node hot"><b>Staff ask a question on WhatsApp</b></div><div class="arrow"></div><div class="node guard"><b>The AI can read the data, never change it</b></div><div class="arrow"></div><div class="node"><b>Answer from the county’s own figures</b></div></div></div></div>
-          <div class="case-body">
-            <span class="case-meta">Nairobi City County · Pneuma Labs · 2026</span>
-            <h3>A WhatsApp assistant for a county revenue team</h3>
-            <dl><div><dt>The problem</dt><dd>An assistant that county revenue staff can message on WhatsApp to get answers about the revenue the county has collected.</dd></div><div><dt>The goal</dt><dd>Let staff get a revenue figure in seconds by asking in plain words, instead of digging through spreadsheets.</dd></div><div><dt>My role</dt><dd>Product and engineering lead: scoped it with the revenue team, built it and checked every answer against the source.</dd></div><div><dt>How we shipped it</dt><dd>I built a system that reads the county’s revenue reports into one clean database, then added an AI assistant staff can message on WhatsApp or the web. The AI can only read the data, never change it, and only approved phone numbers can use it.</dd></div><div><dt>The challenges</dt><dd>The reports came in several different layouts, and the same money sometimes appeared in more than one report. The AI also had to be useful without ever being able to change the county’s records.</dd></div><div><dt>The outcome</dt><dd>Staff ask questions like “what did this revenue stream bring in last quarter?” and get answers from the county’s own records. I checked the answers against the original reports and fixed the places where amounts were being counted twice.</dd></div><div><dt>What I learned</dt><dd>The hard part was not the AI, it was the data. An answer that looks right is not the same as an answer that is right, so every number has to be checked against the source.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>TypeScript</li><li>Supabase (PostgreSQL)</li><li>LLMs via NVIDIA NIM</li><li>WhatsApp</li><li>Vercel</li></ul></div>
-            <div class="case-links"><span class="private">Government system, private. Walkthrough on request.</span></div>
-          </div>
-        </article>
-        <article class="case reveal">
-          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">What runs on its own</div><div class="flow"><div class="split"><div class="node"><b>Rent, invoicing, arrears</b></div><div class="node"><b>Receipts sent automatically</b></div></div><div class="arrow"></div><div class="split"><div class="node"><b>Maintenance with contractor approvals</b></div><div class="node"><b>Leases signed online</b></div></div><div class="arrow"></div><div class="node hot"><b>Landlords ask for reports on WhatsApp</b></div><div class="arrow"></div><div class="node guard"><b>AI proposes, code decides</b></div></div></div></div>
-          <div class="case-body">
-            <span class="case-meta">PropFlow · Pneuma Labs · 2026</span>
-            <h3>AI and automation that run a landlord’s routine work</h3>
-            <dl><div><dt>The problem</dt><dd>An AI and automated property-management system for landlords and managing agents.</dd></div><div><dt>The goal</dt><dd>Take the routine work of property management off landlords’ hands, so they get reports instead of chasing tasks.</dd></div><div><dt>My role</dt><dd>Product lead and lead engineer, with a partner: product vision, roadmap, partner onboarding in Uganda and Rwanda, and the build.</dd></div><div><dt>How we shipped it</dt><dd>I designed and built it with a partner. The rent roll, invoicing and billing, arrears and late fees, deposits, reconciliation and tenant receipts run automatically, leases are generated and signed online, and maintenance requests go to contractors with approvals. Landlords can ask for reports on WhatsApp, tenants report problems there, and an emergency triggers a phone call. AI proposes the next step, but code checks each suggestion against strict rules before anything happens. I also travelled to Uganda and Rwanda to meet partners, including the leadership teams of Keystone Technologies and Unispace.</dd></div><div><dt>The challenges</dt><dd>The system handles real money and legal documents, and tenant messages are unpredictable. Every automated step and every AI suggestion had to be safe before it could reach a landlord or tenant.</dd></div><div><dt>The outcome</dt><dd>Live with users in Kenya, Uganda and Rwanda. Built for production: 90 data models, 120 test files, online payments, nightly backups and a written recovery plan. In Rwanda I trained five CEOs, property owners and their CTOs to use it, and I maintain it in production.</dd></div><div><dt>What I learned</dt><dd>Automation earns trust when AI suggests and clear rules decide. That is what makes it safe to put near tenants and landlords’ money.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Twilio (voice, images)</li><li>WhatsApp</li><li>Paystack</li><li>Docker</li><li>Sentry</li></ul></div>
-            <div class="case-links"><span class="private">Client product, private. Demo on request.</span></div>
-          </div>
-        </article>
-        <article class="case reveal">
-          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">From statement to answer</div><div class="flow"><div class="split"><div class="node"><b>M-Pesa and bank statements</b></div><div class="node"><b>Payslips and tax forms</b></div></div><div class="arrow"></div><div class="node"><b>Every transaction read and sorted</b></div><div class="arrow"></div><div class="node hot"><b>Ask anything about your money</b></div><div class="arrow"></div><div class="split"><div class="node"><b>WhatsApp</b></div><div class="node"><b>Telegram and web</b></div></div></div></div></div>
-          <div class="case-body">
-            <span class="case-meta">Personal finance · Lead developer · 2026</span>
-            <h3>Chat with your finances, M-Pesa included</h3>
-            <dl><div><dt>The problem</dt><dd>An AI assistant that helps people in Kenya understand their money and their taxes.</dd></div><div><dt>The goal</dt><dd>Help people see where their money goes and file with KRA without stress, using records they already have.</dd></div><div><dt>My role</dt><dd>Lead developer: scoped the product and led a two-person build.</dd></div><div><dt>How we shipped it</dt><dd>I led development, working with one other developer. People upload M-Pesa statements, bank statements and payslips, even password-protected or scanned ones. The system reads every transaction, and people can ask questions on WhatsApp, Telegram or the web. It also reads P9 tax forms and walks people through filing.</dd></div><div><dt>The challenges</dt><dd>Statements arrive in every shape: password-protected, scanned, or formatted differently by each bank. Tax rules also had to be explained in plain language.</dd></div><div><dt>The outcome</dt><dd>A working product with subscription payments.</dd></div><div><dt>What I learned</dt><dd>Meet people where they already are. M-Pesa statements and WhatsApp beat asking anyone to learn a new app.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>Supabase</li><li>Pinecone (RAG)</li><li>OCR</li><li>WhatsApp</li><li>Telegram</li><li>Paystack</li></ul></div>
-            <div class="case-links"><span class="private">Private. Demo on request.</span></div>
-          </div>
-        </article>
-        <article class="case reveal">
-          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">Every morning, before the market opens</div><div class="flow"><div class="split"><div class="node"><b>Share prices</b></div><div class="node"><b>Economy and news</b></div></div><div class="arrow"></div><div class="node"><b>AI analysts study each angle</b></div><div class="arrow"></div><div class="node hot"><b>They argue the case for and against</b></div><div class="arrow"></div><div class="node guard"><b>A risk check that accounts for inflation</b></div><div class="arrow"></div><div class="node"><b>A plain-English view, scored later for accuracy</b></div></div></div></div>
-          <div class="case-body">
-            <span class="case-meta">Market intelligence · Pneuma Labs · 2026</span>
-            <h3>An AI research assistant for Nairobi Securities Exchange analysts</h3>
-            <dl><div><dt>The problem</dt><dd>An AI tool that does the first round of stock research on the Nairobi Securities Exchange.</dd></div><div><dt>The goal</dt><dd>Cut the time analysts spend gathering prices, economic data and news before they can start thinking about a stock.</dd></div><div><dt>My role</dt><dd>Product and engineering lead: defined what analysts needed, built the agents and set up accuracy tracking.</dd></div><div><dt>How we shipped it</dt><dd>I adapted an open-source framework into a team of AI “analysts” that each study one angle, argue the case for and against a stock, then pass a risk check that accounts for Kenyan inflation. It runs automatically every morning before the market opens, and switches to a backup AI provider if one goes down.</dd></div><div><dt>The challenges</dt><dd>The data comes from many scattered sources, AI providers sometimes go down, and nobody trusts an AI’s stock call unless its track record can be checked.</dd></div><div><dt>The outcome</dt><dd>Analysts used it for research and decision support, and it was later sold to another business, where it still runs. It does the groundwork; the investment decision stays with them.</dd></div><div><dt>What I learned</dt><dd>You can’t trust an AI you can’t measure. Logging every prediction and scoring it later is what turns a clever demo into a tool people rely on.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Vercel AI SDK</li><li>Multi-agent LLMs</li><li>GitHub Actions</li></ul></div>
-            <div class="case-links"><span class="private">Private. Demo on request.</span></div>
-          </div>
-        </article>
-        <article class="case reveal">
-          <div class="case-visual" aria-hidden="true"><div class="diagram"><div class="diagram-caption">How an investor uses it</div><div class="flow"><div class="node"><b>Opens their money-transfer or banking app</b></div><div class="arrow"></div><div class="node"><b>Sees vetted African investments they qualify for</b></div><div class="arrow"></div><div class="node hot"><b>Verifies their identity once</b></div><div class="arrow"></div><div class="node"><b>Funds a wallet and invests</b></div><div class="arrow"></div><div class="node guard"><b>Every amount reconciled before it moves</b></div></div></div></div>
-          <div class="case-body">
-            <span class="case-meta">Fintech · Diaspora investment · 2025 – 2026</span>
-            <h3>An investment marketplace that partner apps can plug in</h3>
-            <dl><div><dt>The problem</dt><dd>A cross-border investment marketplace for people in the diaspora, built for a fintech client.</dd></div><div><dt>The goal</dt><dd>Let people abroad invest in vetted African opportunities from inside apps they already use, such as money-transfer and banking apps, with trust and compliance built in.</dd></div><div><dt>My role</dt><dd>Senior Software Engineer at ProDG Studios, with product work throughout: the roadmap audit, the workflow explainer, the API specification, QA and user acceptance testing.</dd></div><div><dt>How we shipped it</dt><dd>I developed and deployed the frontend, integrated the platform with IMTOs (international money transfer operators) so their customers could invest from apps they already use, took it through user acceptance testing into production, and kept working on the product into 2026, across research, product design and QA. The product covers investor onboarding with identity checks, the marketplace, wallet funding, a portal for fund managers to list investments, partner dashboards and an admin console.</dd></div><div><dt>The challenges</dt><dd>A key provider changed partway through, so money movement had to work with any provider and be tested against a stand-in. Business verification was blocked, so we used a manual route. And with investors’ money involved, every amount had to reconcile exactly.</dd></div><div><dt>The outcome</dt><dd>Signed off in user acceptance testing and deployed to production, with identity checks live and money-transfer partners integrated.</dd></div><div><dt>What I learned</dt><dd>In fintech, trust is the product. Getting every amount to add up matters more than any feature, and building so the payment provider can change keeps a project alive when partners change.</dd></div></dl>
-            <div><dt class="tools-label">Tools</dt><ul class="chips" aria-label="Tools used"><li>React</li><li>Next.js</li><li>Python</li><li>PostgreSQL</li><li>Identity verification (KYC)</li></ul></div>
-            <div class="case-links"><span class="private">Client product. Walkthrough on request.</span></div>
-          </div>
-        </article>
-      </div>
-
-      <div class="more">
-        <h3>More work</h3>
-        <div class="more-grid">
-          <div class="mini reveal">
-            <span class="tag">Healthcare · US client</span>
-            <h4>Tumaini Support &amp; Care</h4>
-            <p>A live healthcare staffing platform with candidate, employer and admin portals, a staffing-request pipeline, employer verification and an audit log, tested end to end with Playwright.</p>
-          </div>
-          <div class="mini reveal">
-            <span class="tag">Data collection · 3,000+ users</span>
-            <h4>NGAO</h4>
-            <p>A WhatsApp platform that replaces paper forms for field reporting in Kenya. People answer in English or Kiswahili, by text, photo or voice, misspellings are corrected, photo locations are checked, and every submission is kept as a permanent record. I was the full-stack developer: I built the engines that run the conversations and connected them to the admin dashboard. It is rolled out and has more than 3,000 users.</p>
-          </div>
-          <div class="mini reveal">
-            <span class="tag">Climate data · Prototype</span>
-            <h4>Africa Climate &amp; Nature Data Platform</h4>
-            <p>Sector dashboards and a Kenya county-level physical and transition risk map for MSMEs, built for Climate Shapers Africa.</p>
-            <a href="https://acndpv1.vercel.app" target="_blank" rel="noopener">View prototype ↗</a>
-          </div>
-          <div class="mini reveal">
-            <span class="tag">Climate risk · Banking</span>
-            <h4>Climate-stress analytics for the Kenya Bankers Association</h4>
-            <p>Exposure analysis linking climate-stress indicators to probability-of-default and credit-risk thinking for Kenyan and Tanzanian banks.</p>
-          </div>
-          <div class="mini reveal">
-            <span class="tag">Security · Product lead and sole engineer</span>
-            <h4>Breach Alert</h4>
-            <p>Opt-in breach monitoring. Users prove they own an email address or domain before they are monitored, and passwords are checked without ever being sent in full.</p>
-          </div>
-          <div class="mini reveal">
-            <span class="tag">Commerce · Product lead and sole engineer</span>
-            <h4>Harambee Shop</h4>
-            <p>Group-buying for household essentials: neighbours share a basket, unlock bigger discounts together, and split supplier packs. Built with Free Pascal and Next.js.</p>
-          </div>
-          <div class="mini reveal">
-            <span class="tag">Education · Product lead and sole engineer</span>
-            <h4>Course evaluation system</h4>
-            <p>The first version increased student feedback rates and gave staff timely analytics. The 2026 rebuild adds anonymous tokenised links and AI summaries of student comments.</p>
-          </div>
-          <div class="mini reveal">
-            <span class="tag">AI video · US and UK client</span>
-            <h4>MessageHeard</h4>
-            <p>Full-stack developer on an AI video platform: I built the backend and the interface and trained the custom image models. It breaks a transcript into scenes and generates the images and video for each, with a job queue, status tracking and retries, delivered on an 8.5-week plan with weekly client stand-ups.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="how">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">How I work</span>
-        <h2>How I deliver a project, from scope to support.</h2>
-        <p>The same five steps on every engagement, whether it's a national portal or a tool for one editor. Each comes with an example from real work.</p>
-      </div>
-      <div class="steps">
-        <div class="step reveal"><h3>Understand</h3><p>Talk to the people who will use it and see how the work really happens, before deciding what to build.</p><span class="evidence">On RICC I researched why universities, industry, investors and regulators weren't connecting, then wrote user journeys for each group.</span></div>
-        <div class="step reveal"><h3>Scope</h3><p>Agree a clear piece of work: what it does, what it doesn't, and how we'll know it's done. Engineers can build from it without guessing.</p><span class="evidence">On CrossVest I wrote the workflow explainer and the frontend-to-backend API specification.</span></div>
-        <div class="step reveal"><h3>Build</h3><p>Working software every week you can click through, with honest status. When a date matters, I cut scope on purpose rather than let quality slip.</p><span class="evidence">When CrossVest's payment provider was removed mid-build, we made payments provider-neutral and cut scope to hit the demo date.</span></div>
-        <div class="step reveal"><h3>Test</h3><p>Nothing ships until it has been tested against real cases and signed off by the people who will use it.</p><span class="evidence">A 142-case test pack across 20 modules for RICC; 120 test files on PropFlow; CrossVest signed off in user acceptance testing.</span></div>
-        <div class="step reveal"><h3>Ship and support</h3><p>Launch with the people who use it, train them, and keep it running: fixes, monitoring and the next round of improvements.</p><span class="evidence">I trained five CEOs and their CTOs in Rwanda on PropFlow and have maintained it since launch; NGAO grew past 3,000 users after rollout.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="about" style="background: var(--bg-2); border-block: 1px solid var(--line);">
-    <div class="wrap about">
-      <div class="portrait reveal">
-        <img src="assets/img/wayne.webp" width="640" height="739" loading="lazy" alt="Portrait of Wayne Williams Opanja">
-      </div>
-      <div class="about-text reveal">
-        <p>I build for the people at the end of the line: the field worker with no signal, the editor with no designer, the staff member who just needs an answer.</p>
-        <p>I'm a full-stack software developer based in Nairobi, and I also lead products, so I can take a project from the first conversation to something people use every day. At Pneuma Labs I lead AI and automation products for clients in the UK, Kenya, Uganda, Rwanda, Burundi and the DRC, including PropFlow, an AI and automated property-management system now live with users in Kenya, Uganda and Rwanda. Before that I was a senior software engineer at ProDG Studios in the UK, where I did the research, user journeys and delivery work on national platforms for two Nigerian ministries, a WhatsApp data-collection platform with more than 3,000 users, and a cross-border investment marketplace integrated with money-transfer operators.</p>
-        <p>I work well on my own: I scope the work, build it, test it and hand it over with documentation, and I prototype an idea quickly instead of debating it. I care about the unglamorous parts that make a product trustworthy: data that adds up, permissions that hold, and AI that is checked before it acts.</p>
-        <p>I'm also a partner at Climate Shapers Africa, working on climate-risk data for financial institutions. I hold the EC-Council CHFI certification and I'm finishing a Business IT degree at Strathmore University.</p>
-        <div class="facts">
-          <div class="fact"><strong>8</strong><span>client projects at Pneuma Labs</span></div>
-          <div class="fact"><strong>8</strong><span>countries with clients</span></div>
-          <div class="fact"><strong>3,000+</strong><span>users on NGAO</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="experience">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">Experience</span>
-        <h2>Where I've done the work.</h2>
-      </div>
-      <ol class="timeline">
-        <li class="role reveal">
-          <time>2026 – Present</time>
-          <div>
-            <h3>Lead Software Engineer · <span class="org">Pneuma Labs</span></h3>
-            <p>AI and automation company. 8 client projects across logistics, real estate, mining, financial services and government in the UK, Kenya, Uganda, Rwanda, Burundi and the DRC.</p>
-            <ul>
-              <li>Build and run client projects end to end: scoping, prototypes, the build itself, testing, user acceptance testing, handover and support.</li>
-              <li><b>Kenya Climate &amp; Nature Directory:</b> built the nightly research pipeline (six sources, 2,774 records migrated) and the Content Studio that turns papers into posts and narrated explainer videos.</li>
-              <li><b>PropFlow:</b> product lead for an AI and automated property-management system, live with users in Kenya, Uganda and Rwanda. Met partner companies in Uganda and Rwanda and trained five CEOs and their CTOs in Rwanda.</li>
-              <li>Shipped the Nairobi City County revenue assistant and a stock research system for the Nairobi Securities Exchange that was later sold to another business.</li>
-              <li>Process analysis and automation design for Mediscope and the Strathmore Centre for Value Investing, including training the Centre's team.</li>
-            </ul>
-          </div>
-        </li>
-        <li class="role reveal">
-          <time>2025 – 2026</time>
-          <div>
-            <h3>Senior Software Engineer · <span class="org">ProDG Studios</span> (UK, remote)</h3>
-            <ul>
-              <li><b>Delivery:</b> ranked #1 for delivery on the team, with 297 issues closed at a 90.5% completion rate.</li>
-              <li><b>RICC, Federal Ministry of Education, Nigeria:</b> led stakeholder research, user journeys, frontend and UX on the national innovation portal, built to collect data offline in remote areas; wrote a 142-case test pack before handover.</li>
-              <li><b>Cross-border investment platform:</b> integrated it with money-transfer operators (IMTOs), wrote the roadmap audit and API specification, and took it through user acceptance testing into production.</li>
-              <li><b>Trademark Registry, Federal Ministry of Industry, Trade and Investment, Nigeria:</b> upgraded the ministry's existing system, rebuilding the registration and administration workflows.</li>
-              <li><b>NGAO:</b> full-stack developer on a WhatsApp data-collection platform for field reporting in Kenya. Rolled out, 3,000+ users.</li>
-            </ul>
-          </div>
-        </li>
-      </ol>
-      <h3 class="kicker" style="display:block;margin:48px 0 18px">Client and partner engagements</h3>
-      <ol class="timeline">
-        <li class="role reveal">
-          <time>Engagement</time>
-          <div>
-            <h3>Product Lead and Sole Engineer, Climate &amp; Nature Toolkit · <span class="org">British International Investment</span></h3>
-            <p>Turned BII's climate and nature risk toolkit into a working prototype of all 23 modules, with guided journeys, calculators and exports. Now in proposal and review.</p>
-          </div>
-        </li>
-        <li class="role reveal">
-          <time>Engagement</time>
-          <div>
-            <h3>Technical Analyst and Partner · <span class="org">Climate Shapers Africa</span></h3>
-            <p>Climate data pipelines, analytical models and AI automations. Climate-stress exposure analytics for the Kenya Bankers Association, the Africa Climate &amp; Nature Data Platform, and Power BI dashboards for the Kenya Climate &amp; Nature Directory. Joined as a data scientist, promoted to technical analyst, now a partner.</p>
-          </div>
-        </li>
-        <li class="role reveal">
-          <time>Engagement</time>
-          <div>
-            <h3>Penetration Testing Consultant · <span class="org">Harambee SACCO</span></h3>
-            <p>Attacker-perspective testing of a financial cooperative's systems, and set out the fixes.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section" id="skills" style="padding-top: 0;">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">Skills</span>
-        <h2>What I bring to a project.</h2>
-      </div>
-      <div class="skills">
-        <div class="skill reveal"><h3>Engineering</h3><p>TypeScript, Python, Next.js, React, SvelteKit, Node.js, NestJS, FastAPI and Django, REST APIs, PostgreSQL and Supabase, Docker, Git and GitHub Actions, AWS, Azure, Vercel and Render. Tested with Vitest, Jest, pytest and Playwright.</p></div>
-        <div class="skill reveal"><h3>Video, learning and messaging</h3><p>Programmatic video and voice-over (Remotion, Piper), course and guided-workflow tools, WhatsApp, Telegram and Twilio channels, and offline-first web apps for places with weak internet.</p></div>
-        <div class="skill reveal"><h3>Product management</h3><p>Discovery and user research, process mapping, roadmaps and specifications, prioritisation and scope control, QA and user acceptance testing, launch and adoption.</p></div>
-        <div class="skill reveal"><h3>Delivery and stakeholders</h3><p>Weekly sprints in Jira and Slack, client stand-ups, partner onboarding and training, and working with government, finance and startup teams across UK, European and US hours.</p></div>
-        <div class="skill reveal"><h3>AI products</h3><p>LLM assistants and agents, multi-agent pipelines, retrieval, text-to-SQL, WhatsApp and Telegram bots, and the guardrails that make AI safe to act.</p></div>
-        <div class="skill reveal"><h3>Data and analytics</h3><p>ETL pipelines, Kafka, Supabase, business intelligence and Power BI dashboards, and checking every number against its source.</p></div>
-        <div class="skill reveal"><h3>Security</h3><p>CHFI-certified. Penetration testing, secure design, least-privilege data access, encryption at rest and privacy-first products.</p></div>
-      </div>
-      <div class="creds">
-        <div class="skill reveal">
-          <h3>Certifications</h3>
-          <ul>
-            <li>CHFI, Computer Hacking Forensic Investigator, EC-Council (2024)</li>
-            <li>Cybersecurity Certificate, Google</li>
-            <li>Full-Stack Development, Simplilearn</li>
-          </ul>
-        </div>
-        <div class="skill reveal">
-          <h3>Education &amp; languages</h3>
-          <ul>
-            <li>Bachelor of Business Information Technology, Strathmore University (2024 – 2027)</li>
-            <li>Diploma in Business Information Technology, Strathmore University (2024)</li>
-            <li>Student Assistant (Developer), Strathmore Institute of Mathematical Sciences (2023 – 2025): course evaluation system that increased feedback rates and gave staff timely analytics</li>
-            <li>Software Developer Intern, Strathmore University ICT (2025 – 2026, degree internship): rebuilt the phone-billing system on Odoo</li>
-            <li>English and Swahili, fluent; German, beginner</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="refs" style="padding-top: 0;">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">References</span>
-        <h2>People I've delivered for.</h2>
-        <p>Contact details on request.</p>
-      </div>
-      <div class="refs">
-        <div class="ref reveal"><b>Reuben Muhindi Wambui</b><span>Executive Director, Climate Shapers Africa, and founder of the Kenya Climate &amp; Nature Directory. I built the directory's research pipeline and the Climate Shapers studio.</span></div>
-        <div class="ref reveal"><b>Habeeb Bidemi Aremu</b><span>CEO, Hatixa Global Solutions. The Trademark Registry project for Nigeria's Federal Ministry of Industry, Trade and Investment.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contact" style="padding-top: 0;">
-    <div class="wrap">
-      <div class="contact-card reveal">
-        <span class="kicker">Contact</span>
-        <h2>Have a project that needs building?</h2>
-        <p>I'm available for software development projects on a consultancy basis, and for full-time roles. Send me the scope and I'll come back with how I'd build it.</p>
-        <div class="contact-list">
-          <a class="contact-item" href="mailto:waynewilliams2028@gmail.com"><span>Email</span><strong>waynewilliams2028@gmail.com</strong></a>
-          <a class="contact-item" href="https://wa.me/254798609919" target="_blank" rel="noopener"><span>WhatsApp</span><strong>+254 798 609 919</strong></a>
-          <a class="contact-item" href="https://github.com/wayne-spec" target="_blank" rel="noopener"><span>GitHub</span><strong>github.com/wayne-spec</strong></a>
-          <a class="contact-item" href="https://www.linkedin.com/in/waynewilliamsopanja" target="_blank" rel="noopener"><span>LinkedIn</span><strong>in/waynewilliamsopanja</strong></a>
-        </div>
-      </div>
-    </div>
-  </section>
+<main id="desktop" aria-label="Desktop">
+  <h1 class="sr-only">Wayne Williams Opanja, software developer: an interactive desktop portfolio</h1>
+  <ul class="icons" id="icons" aria-label="Desktop items"></ul>
+  <div id="windows"></div>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>© <span id="year">2026</span> Wayne Williams Opanja · Nairobi, Kenya</span>
-    <a href="assets/Wayne-Williams-Opanja-CV.pdf" download>Download CV (PDF)</a>
-  </div>
-</footer>
+<nav class="dock" id="dock" aria-label="Dock"></nav>
 
-<script>
-(function () {
-  var root = document.documentElement;
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  document.getElementById('theme-toggle').addEventListener('click', function () {
-    var current = root.getAttribute('data-theme') ||
-      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-    var next = current === 'light' ? 'dark' : 'light';
-    root.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch (e) {}
-  });
-
-  var menuBtn = document.getElementById('menu-toggle');
-  var links = document.getElementById('nav-links');
-  menuBtn.addEventListener('click', function () {
-    var open = links.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  links.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') { links.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }
-  });
-
-  var items = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('in'); }); return; }
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-  }, { rootMargin: '0px 0px -8% 0px' });
-  items.forEach(function (el) { io.observe(el); });
-})();
-</script>
+<noscript>
+  <div class="nojs">This portfolio is an interactive desktop and needs JavaScript. <a href="classic.html">Open the classic version</a>.</div>
+</noscript>
+<script src="assets/desktop/desktop.js" defer></script>
 </body>
 </html>
