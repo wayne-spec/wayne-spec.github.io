@@ -188,7 +188,7 @@
     var lede = q('#top .lede');
     var stats = qa('#impact .stat').slice(0, 4).map(function (s) { return '<div><b>' + text(s.querySelector('strong')) + '</b><span>' + text(s.querySelector('span')) + '</span></div>'; }).join('');
     b.innerHTML = '<div class="welcome"><img src="assets/img/wayne.webp" width="640" height="739" alt="Portrait of Wayne Williams Opanja">' +
-      '<div><span class="kicker">Software Developer · Available for project-based consultancy</span>' +
+      '<div><span class="kicker">Forward Deployed Engineer · Available for project-based consultancy</span>' +
       '<h2>Hi, I\'m Wayne.</h2><p class="lede"></p>' +
       '<div class="ctas"><button class="btn btn-primary btn-sm" data-open="finder" type="button">See my work</button>' +
       '<button class="btn btn-ghost btn-sm" data-open="studio" type="button">What I build</button>' +
@@ -308,7 +308,7 @@
     var cs = cases();
     var CMDS = {
       help: function () { say('Commands: whoami, about, projects, open <number>, build, how, skills, experience, cv, contact, references, live, clear, exit'); },
-      whoami: function () { say('Wayne Williams Opanja: full-stack software developer, Nairobi. Available for project-based consultancy.'); },
+      whoami: function () { say('Wayne Williams Opanja: forward deployed engineer, Nairobi. Available for project-based consultancy.'); },
       about: function () { say(text(q('#top .lede'))); },
       projects: function () { cs.forEach(function (c, i) { say((i + 1) + '. ' + c.name + ': ' + c.title); }); say('Type "open 1" to open the first one.'); },
       build: function () { openApp('studio'); say('Opening What I build…'); },
